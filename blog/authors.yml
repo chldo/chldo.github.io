@@ -1,17 +1,17 @@
-endi:
-  name: Endilie Yacop Sucipto
-  title: Maintainer of Docusaurus
-  url: https://github.com/endiliey
-  image_url: https://github.com/endiliey.png
+kyunghoon:
+    name: Kyunghoon Kim
+    title: Maintainer of Chldo
+    url: https://github.com/koorukuroo
+    image_url: https://github.com/koorukuroo.png
 
-yangshun:
-  name: Yangshun Tay
-  title: Front End Engineer @ Facebook
-  url: https://github.com/yangshun
-  image_url: https://github.com/yangshun.png
+gukmoon:
+    name: Gukmoon Ahn
+    title: Front End Engineer @ CoreDotToday
+    url: https://github.com/jourmooney
+    image_url: https://github.com/jourmooney.png
 
 slorber:
-  name: Sébastien Lorber
-  title: Docusaurus maintainer
-  url: https://sebastienlorber.com
-  image_url: https://github.com/slorber.png
+    name: Sébastien Lorber
+    title: Docusaurus maintainer
+    url: https://sebastienlorber.com
+    image_url: https://github.com/slorber.png
