@@ -2,46 +2,25 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# chldo AI 소개
 
-Let's discover **Docusaurus in less than 5 minutes**.
+**[chldo](https://chldo.com)** AI는 Agent AI를 쉽게 사용 및 관리하는 서비스입니다. 대표적인 사용 사례로는 [Hyscent AI](https://hyscent.ai), [토론 AI](https://toron.ai) 등이 있습니다.
 
-## Getting Started
+### 대표적인 사용 사례
 
-Get started by **creating a new site**.
+-   [Hyscent AI](https://hyscent.ai/)
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+    -   AI 향수 추천 서비스 ([소개 문서](https://core.today/news/project/hyscent/thehyundaidaegu))
 
-### What you'll need
+-   [AI 조향사 : Eau de AI](https://eaude.ai/)
 
-- [Node.js](https://nodejs.org/en/download/) version 18.0 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+    -   세상에서 단 하나 뿐인 나만의 향수를 만들어 주는 AI 조향사 ([소개 문서](https://core.today/news/project/eaudeai/2024gangnang))
 
-## Generate a new site
+-   [토론 AI](https://toron.ai/)
+    -   Toron.AI에서 수업에서 배운 내용을 토론하고, AI 튜터와 함께 성장하세요.
 
-Generate a new Docusaurus site using the **classic template**.
+## 인프라 소개
 
-The classic template will automatically be added to your project after you run the command:
+chldo는 AWS, Vercel 및 다양한 LLM 벤더 사의 API들로 구성되어 있습니다. 클라우드 기반으로 구축된 chldo는 고가용성으로 사용이 가능하며, 에이전트 기능 연결, 비용관리, 지식, 메모리, 도구 등의 중요한 기능들을 쉽게 사용 가능합니다.
 
-```bash
-npm init docusaurus@latest my-website classic
-```
-
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
-
-The command also installs all necessary dependencies you need to run Docusaurus.
-
-## Start your site
-
-Run the development server:
-
-```bash
-cd my-website
-npm run start
-```
-
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
-
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
-
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+![infra](/img/infrastructure.png)
