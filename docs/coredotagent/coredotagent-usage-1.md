@@ -132,3 +132,25 @@ Anthropic에
 입니다.
 None
 ```
+
+## 오류
+
+### API_KEY 존재하지 않을 때
+
+`API_KEY`가 없는 경우, 에러가 발생합니다.
+
+-   존재하지 않는 API 키
+-   만료된 API 키
+-   삭제된 API 키
+-   비정상적인 행동으로 중지된 API 키
+
+```bash
+/usr/local/lib/python3.10/dist-packages/openai/_base_client.py in _request(self, cast_to, options, remaining_retries, stream, stream_cls)
+   1044
+   1045             log.debug("Re-raising status error")
+-> 1046             raise self._make_status_error_from_response(err.response) from None
+   1047
+   1048         return self._process_response(
+
+NotFoundError: Error code: 404 - {'status': 'failure', 'message': 'API_KEY does not exist.'}
+```
