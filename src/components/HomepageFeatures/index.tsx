@@ -62,6 +62,38 @@ export default function HomepageFeatures(): JSX.Element {
         <section className={styles.features}>
             <div className="container">
                 <div className="row">
+                    <strong>Chldo</strong>는 LLM을 이용하여 에이전트 기반의
+                    시뮬레이션 환경을 개발하고 사용 및 배포하는 환경을 제공하는
+                    플랫폼입니다. Chldo는 다음과 같은 구조를 가지고 있습니다.
+                </div>
+                <div className="row">
+                    <ul>
+                        <li>
+                            <strong>Chldo.com</strong> : 에이전트를 생성하고
+                            관리하는 서비스
+                        </li>
+                        <li>
+                            <strong>Chldo.AI</strong> : 에이전트를 배포하고
+                            사용하는 서비스
+                        </li>
+                        <li>
+                            <strong>Chldo Template</strong> : 에이전트 템플릿을
+                            제공하는 서비스
+                        </li>
+                        <li>
+                            <strong>Core.Agent</strong> : LLM(OpenAI, Anthropic,
+                            AWS Bedrock 등) 프록시 서비스
+                        </li>
+                    </ul>
+                </div>
+                <div className="text--center padding-horiz--m">
+                    <img
+                        src={"./img/chldo_map.png"}
+                        alt="chldo_map"
+                        width={750}
+                    />
+                </div>
+                <div className="row">
                     {FeatureList.map((props, idx) => (
                         <Feature key={idx} {...props} />
                     ))}
