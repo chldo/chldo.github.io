@@ -4,7 +4,7 @@ import type * as Preset from "@docusaurus/preset-classic";
 
 const config: Config = {
     title: "chldo AI Guide",
-    tagline: "Find answer of your favorite. 최애의 대답을 찾아드립니다.",
+    tagline: "당신의 최애 AI, 직접 만들고 대화하세요",
     favicon: "img/favicon.ico",
 
     // Set the production url of your site here
@@ -41,14 +41,14 @@ const config: Config = {
                     // Please change this to your repo.
                     // Remove this to remove the "edit this page" links.
                     editUrl:
-                        "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+                        "https://github.com/chldo/chldo.github.io/tree/main",
                 },
                 blog: {
                     showReadingTime: true,
                     // Please change this to your repo.
                     // Remove this to remove the "edit this page" links.
                     editUrl:
-                        "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+                        "https://github.com/chldo/chldo.github.io/tree/main",
                 },
                 theme: {
                     customCss: "./src/css/custom.css",
@@ -75,7 +75,7 @@ const config: Config = {
         },
 
         // Replace with your project's social card
-        image: "img/docusaurus-social-card.jpg",
+        image: "img/chldo-social-card.jpg",
         navbar: {
             title: "chldo AI Guide",
             logo: {
