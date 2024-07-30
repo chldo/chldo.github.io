@@ -82,30 +82,30 @@ export default function HomepageFeatures(): JSX.Element {
 
                 <div className={clsx("col col--12")}>
                     <div className={clsx("col col--12")}>
-                        <h3>기술 역량</h3>
+                        <h1>기술 요소</h1>
                     </div>
                     <div className={clsx("col col--12")}>
                         <ol>
                             <li>
-                                생성형 AI 기술: Hyscent AI 및 Debate AI와 같은
+                                생성형 AI 기술 : Hyscent AI 및 Debate AI와 같은
                                 맞춤형 AI 캐릭터를 만드는 최신 AI 기술을
                                 활용합니다.
                             </li>
                             <li>
-                                LLM API 통합: 다양한 LLM API와의 통합을 지원하여
-                                유연성과 향상된 기능을 제공합니다.
+                                LLM API 통합 : 다양한 LLM API와의 통합을
+                                지원하여 유연성과 향상된 기능을 제공합니다.
                             </li>
                             <li>
-                                AWS 인프라: AWS의 견고한 인프라로 확장성,
+                                AWS 인프라 : AWS의 견고한 인프라로 확장성,
                                 보안성, 효율적인 관리를 보장합니다.
                             </li>
                             <li>
-                                비용 관리 도구: LLM API 사용과 관련된 비용을
+                                비용 관리 도구 : LLM API 사용과 관련된 비용을
                                 모니터링하고 최적화할 수 있는 포괄적인 도구를
                                 제공합니다.
                             </li>
                             <li>
-                                엔터프라이즈 기능: 모니터링 및 관리 기능이
+                                엔터프라이즈 기능 : 모니터링 및 관리 기능이
                                 통합된 엔터프라이즈 수준의 에이전트를 손쉽게
                                 구축할 수 있습니다.
                             </li>
@@ -114,7 +114,7 @@ export default function HomepageFeatures(): JSX.Element {
                 </div>
                 <div className={clsx("col col--12")}>
                     <div className={clsx("col col--12")}>
-                        <h3>아키텍처 다이어그램</h3>
+                        <h1>아키텍처 다이어그램</h1>
                         <strong>Chldo AI</strong>의 아키텍처는 다음과 같은 주요
                         구성 요소로 이루어져 있습니다:
                     </div>
