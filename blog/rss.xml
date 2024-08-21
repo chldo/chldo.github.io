@@ -4,68 +4,72 @@
         <title>chldo AI Guide Blog</title>
         <link>https://chldo.github.io/blog</link>
         <description>chldo AI Guide Blog</description>
-        <lastBuildDate>Thu, 26 Aug 2021 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 30 Aug 2024 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
         <item>
+            <title><![CDATA[AX 시대, 공공 혁신을 위한 AI 도입 전략 with AWS]]></title>
+            <link>https://chldo.github.io/blog/2024-ax-seminar</link>
+            <guid>https://chldo.github.io/blog/2024-ax-seminar</guid>
+            <pubDate>Fri, 30 Aug 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[AX시대, 코어닷투데이가 준비한 특별한 세션에 여러분을 초대합니다.]]></description>
+            <content:encoded><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="ax시대-코어닷투데이가-준비한-특별한-세션에-여러분을-초대합니다">AX시대, 코어닷투데이가 준비한 특별한 세션에 여러분을 초대합니다.<a class="hash-link" aria-label="Direct link to AX시대, 코어닷투데이가 준비한 특별한 세션에 여러분을 초대합니다." title="Direct link to AX시대, 코어닷투데이가 준비한 특별한 세션에 여러분을 초대합니다." href="https://chldo.github.io/blog/2024-ax-seminar#ax%EC%8B%9C%EB%8C%80-%EC%BD%94%EC%96%B4%EB%8B%B7%ED%88%AC%EB%8D%B0%EC%9D%B4%EA%B0%80-%EC%A4%80%EB%B9%84%ED%95%9C-%ED%8A%B9%EB%B3%84%ED%95%9C-%EC%84%B8%EC%85%98%EC%97%90-%EC%97%AC%EB%9F%AC%EB%B6%84%EC%9D%84-%EC%B4%88%EB%8C%80%ED%95%A9%EB%8B%88%EB%8B%A4">​</a></h3>
+<p>최근 급격히 발전하는 에이전트 인공지능(Agent AI) 기술은 우리의 상상을 초월하는 혁신적인 가능성을 열어주고 있습니다. 특히, Agent AI는 텍스트, 이미지, 시계열 등 다양한 데이터 분야에서 인간과 유사한 창조력을 발휘하며 큰 성과를 거두고 있습니다. 이번 세미나에서는 기업 및 공공기관의 AWS 기반 Agent AI 도입 과정에서 얻은 귀중한 인사이트를 공유합니다.</p>
+<p>본 세미나는 공공기관에서의 AI 트랜스포메이션(AX)을 중심으로, 빠르게 발전하는 Agent AI 기술들을 효과적으로 활용하는 전략을 다룹니다. 또한, Agent AI의 위험과 제약 사항을 분석하고 이를 극복하기 위한 방안을 제시합니다. 세미나에 참석하여 AWS 기반 Agent AI의 미래를 선도할 기술적 혁신과 사회적 대응 방안에 대해 논의하고, 유익한 통찰을 얻을 기회를 놓치지 마세요.</p>
+<ul>
+<li>행사일시 : 2024년 08월 30일 (금요일) 14:00 - 17:00</li>
+<li>행사장소 : UNIST(울산과학기술원) 110동 제4공학관 U207호-7호 해동홀 A</li>
+</ul>
+<p><img decoding="async" loading="lazy" alt="axseminar" src="https://chldo.github.io/assets/images/202408_1-c1e86d3690a207bf4e3c0d0026740e8a.webp" width="2048" height="2880" class="img_ev3q">
+<img decoding="async" loading="lazy" alt="axseminar" src="https://chldo.github.io/assets/images/202408_2-9bb89bf47423a679f650e6d0300422ce.png" width="2048" height="2880" class="img_ev3q"></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="행사-내용">행사 내용<a class="hash-link" aria-label="Direct link to 행사 내용" title="Direct link to 행사 내용" href="https://chldo.github.io/blog/2024-ax-seminar#%ED%96%89%EC%82%AC-%EB%82%B4%EC%9A%A9">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="-오프닝">▶ 오프닝<a class="hash-link" aria-label="Direct link to ▶ 오프닝" title="Direct link to ▶ 오프닝" href="https://chldo.github.io/blog/2024-ax-seminar#-%EC%98%A4%ED%94%84%EB%8B%9D">​</a></h4>
+<p>다가온 넥스트 노멀의 시대, 인간과 AI의 협업을 어떻게 현장에 도입할 것인가? ( 코어닷투데이 김경훈 )</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="-ai-도입-방법론">▶ AI 도입 방법론<a class="hash-link" aria-label="Direct link to ▶ AI 도입 방법론" title="Direct link to ▶ AI 도입 방법론" href="https://chldo.github.io/blog/2024-ax-seminar#-ai-%EB%8F%84%EC%9E%85-%EB%B0%A9%EB%B2%95%EB%A1%A0">​</a></h4>
+<p>Chldo AI : 에이전트 AI의 AWS 기반 클라우드 AI 도입 방법 ( 코어닷투데이 김경훈 )
+Break</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="-aws-전문가의-클라우드-기반-세션">▶ AWS 전문가의 클라우드 기반 세션<a class="hash-link" aria-label="Direct link to ▶ AWS 전문가의 클라우드 기반 세션" title="Direct link to ▶ AWS 전문가의 클라우드 기반 세션" href="https://chldo.github.io/blog/2024-ax-seminar#-aws-%EC%A0%84%EB%AC%B8%EA%B0%80%EC%9D%98-%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C-%EA%B8%B0%EB%B0%98-%EC%84%B8%EC%85%98">​</a></h4>
+<p>GPU / HPC on AWS ( AWS )</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="-ai-도입-사례-1">▶ AI 도입 사례 1<a class="hash-link" aria-label="Direct link to ▶ AI 도입 사례 1" title="Direct link to ▶ AI 도입 사례 1" href="https://chldo.github.io/blog/2024-ax-seminar#-ai-%EB%8F%84%EC%9E%85-%EC%82%AC%EB%A1%80-1">​</a></h4>
+<p>사회적기업 코끼리공장의 AI 키오스크 코끼리아저씨 에이전트 도입 ( 코끼리공장 이채진 대표 )
+Break</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="-ai-도입-사례-2">▶ AI 도입 사례 2<a class="hash-link" aria-label="Direct link to ▶ AI 도입 사례 2" title="Direct link to ▶ AI 도입 사례 2" href="https://chldo.github.io/blog/2024-ax-seminar#-ai-%EB%8F%84%EC%9E%85-%EC%82%AC%EB%A1%80-2">​</a></h4>
+<p>대학수학에서의 AI 튜터 도입 ( UNIST 김필원 교수 응용수학 소모임 팀 )</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="-ai-도입-사례-3">▶ AI 도입 사례 3<a class="hash-link" aria-label="Direct link to ▶ AI 도입 사례 3" title="Direct link to ▶ AI 도입 사례 3" href="https://chldo.github.io/blog/2024-ax-seminar#-ai-%EB%8F%84%EC%9E%85-%EC%82%AC%EB%A1%80-3">​</a></h4>
+<p>더현대 대구 : AI 조향사 하이센트의 향기로운 여정 ( 코어닷투데이 안국문 팀장 )
+세미나 참여자 분들께는 AI 향수 Eau de AI와 AWS 반팔 티셔츠를 증정합니다. (사전 등록 및 선착순 증정)</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="찾아오시는-길">찾아오시는 길<a class="hash-link" aria-label="Direct link to 찾아오시는 길" title="Direct link to 찾아오시는 길" href="https://chldo.github.io/blog/2024-ax-seminar#%EC%B0%BE%EC%95%84%EC%98%A4%EC%8B%9C%EB%8A%94-%EA%B8%B8">​</a></h3>
+<p><img decoding="async" loading="lazy" alt="map" src="https://chldo.github.io/assets/images/seminar_place-c9d2ff47eff69bc52ca86de8c812e759.webp" width="1230" height="645" class="img_ev3q">
+KTX 울산역(통도사)에서 337번 버스를 이용하여 UNIST에서 하차하거나 327, 807번 버스를 이용하여 유니스트 입구에서 하차합니다.(택시 이용 시: 약 5분)</p>
+<ul>
+<li>UNIST 오는 길 : <a href="https://unist-kor.unist.ac.kr/about-unist/directions/road/" target="_blank" rel="noopener noreferrer">https://unist-kor.unist.ac.kr/about-unist/directions/road/</a></li>
+<li>네이버 지도 : <a href="https://naver.me/GxOLV12k" target="_blank" rel="noopener noreferrer">https://naver.me/GxOLV12k</a></li>
+</ul>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="울산과학기술원-110동-제4공학관-u207호-7호-해동홀a">울산과학기술원 110동 제4공학관 U207호-7호 해동홀A<a class="hash-link" aria-label="Direct link to 울산과학기술원 110동 제4공학관 U207호-7호 해동홀A" title="Direct link to 울산과학기술원 110동 제4공학관 U207호-7호 해동홀A" href="https://chldo.github.io/blog/2024-ax-seminar#%EC%9A%B8%EC%82%B0%EA%B3%BC%ED%95%99%EA%B8%B0%EC%88%A0%EC%9B%90-110%EB%8F%99-%EC%A0%9C4%EA%B3%B5%ED%95%99%EA%B4%80-u207%ED%98%B8-7%ED%98%B8-%ED%95%B4%EB%8F%99%ED%99%80a">​</a></h5>
+<p>110동 2층 커피숍 오른쪽 뒤편에 있습니다.</p>
+<p>주차 시 도로 공간 및 111동 뒤편 야외 주차장 등이 하시면 됩니다. (주차권 지원)
+바깥 쪽에서 출입할 경우에는 2층에서 공간이 바로 연결되어 있습니다.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="사전등록-링크">사전등록 링크<a class="hash-link" aria-label="Direct link to 사전등록 링크" title="Direct link to 사전등록 링크" href="https://chldo.github.io/blog/2024-ax-seminar#%EC%82%AC%EC%A0%84%EB%93%B1%EB%A1%9D-%EB%A7%81%ED%81%AC">​</a></h2>
+<p>아래 링크를 통해 사전등록해 주시는 분에 한해 AI 향수와 반팔 티셔츠를 우선적으로 제공합니다.</p>
+<p><a href="https://forms.gle/Ej4ZLH9nV11fMVFA8" target="_blank" rel="noopener noreferrer">https://forms.gle/Ej4ZLH9nV11fMVFA8</a></p>]]></content:encoded>
+            <category>ax</category>
+            <category>aws</category>
+            <category>ai</category>
+            <category>agent</category>
+            <category>core.today</category>
+        </item>
+        <item>
             <title><![CDATA[Welcome to chldo]]></title>
             <link>https://chldo.github.io/blog/welcome</link>
             <guid>https://chldo.github.io/blog/welcome</guid>
-            <pubDate>Thu, 26 Aug 2021 00:00:00 GMT</pubDate>
+            <pubDate>Mon, 01 Jan 2024 00:00:00 GMT</pubDate>
             <description><![CDATA[Find answer of your favorite.]]></description>
             <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="find-answer-of-your-favorite">Find answer of your favorite.<a class="hash-link" aria-label="Direct link to Find answer of your favorite." title="Direct link to Find answer of your favorite." href="https://chldo.github.io/blog/welcome#find-answer-of-your-favorite">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="최애의-대답을-찾아드립니다">최애의 대답을 찾아드립니다.<a class="hash-link" aria-label="Direct link to 최애의 대답을 찾아드립니다." title="Direct link to 최애의 대답을 찾아드립니다." href="https://chldo.github.io/blog/welcome#%EC%B5%9C%EC%95%A0%EC%9D%98-%EB%8C%80%EB%8B%B5%EC%9D%84-%EC%B0%BE%EC%95%84%EB%93%9C%EB%A6%BD%EB%8B%88%EB%8B%A4">​</a></h3>
 <p><img decoding="async" loading="lazy" alt="Docusaurus Plushie" src="https://chldo.github.io/assets/images/image-e61d41ccf8fe667bbfe447b9eb4add93.png" width="1274" height="455" class="img_ev3q"></p>]]></content:encoded>
             <category>Facebook</category>
             <category>Hello</category>
-            <category>Docusaurus</category>
-        </item>
-        <item>
-            <title><![CDATA[MDX Blog Post]]></title>
-            <link>https://chldo.github.io/blog/mdx-blog-post</link>
-            <guid>https://chldo.github.io/blog/mdx-blog-post</guid>
-            <pubDate>Sun, 01 Aug 2021 00:00:00 GMT</pubDate>
-            <description><![CDATA[Blog posts support Docusaurus Markdown features, such as MDX.]]></description>
-            <content:encoded><![CDATA[<p>Blog posts support <a href="https://docusaurus.io/docs/markdown-features" target="_blank" rel="noopener noreferrer">Docusaurus Markdown features</a>, such as <a href="https://mdxjs.com/" target="_blank" rel="noopener noreferrer">MDX</a>.</p>
-<div class="theme-admonition theme-admonition-tip admonition_xJq3 alert alert--success"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>tip</div><div class="admonitionContent_BuS1"><p>Use the power of React to create interactive blog posts.</p><div class="language-js codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-js codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token operator" style="color:#393A34">&lt;</span><span class="token plain">button onClick</span><span class="token operator" style="color:#393A34">=</span><span class="token punctuation" style="color:#393A34">{</span><span class="token punctuation" style="color:#393A34">(</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token arrow operator" style="color:#393A34">=&gt;</span><span class="token plain"> </span><span class="token function" style="color:#d73a49">alert</span><span class="token punctuation" style="color:#393A34">(</span><span class="token string" style="color:#e3116c">"button clicked!"</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">}</span><span class="token operator" style="color:#393A34">&gt;</span><span class="token maybe-class-name">Click</span><span class="token plain"> me</span><span class="token operator" style="color:#393A34">!</span><span class="token operator" style="color:#393A34">&lt;</span><span class="token operator" style="color:#393A34">/</span><span class="token plain">button</span><span class="token operator" style="color:#393A34">&gt;</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div><button>Click me!</button></div></div>]]></content:encoded>
-            <category>Docusaurus</category>
-        </item>
-        <item>
-            <title><![CDATA[Long Blog Post]]></title>
-            <link>https://chldo.github.io/blog/long-blog-post</link>
-            <guid>https://chldo.github.io/blog/long-blog-post</guid>
-            <pubDate>Wed, 29 May 2019 00:00:00 GMT</pubDate>
-            <description><![CDATA[This is the summary of a very long blog post,]]></description>
-            <content:encoded><![CDATA[<p>This is the summary of a very long blog post,</p>
-<p>Use a <code>&lt;!--</code> <code>truncate</code> <code>--&gt;</code> comment to limit blog post size in the list view.</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>]]></content:encoded>
-            <category>Hello</category>
-            <category>Docusaurus</category>
-        </item>
-        <item>
-            <title><![CDATA[First Blog Post]]></title>
-            <link>https://chldo.github.io/blog/first-blog-post</link>
-            <guid>https://chldo.github.io/blog/first-blog-post</guid>
-            <pubDate>Tue, 28 May 2019 00:00:00 GMT</pubDate>
-            <description><![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet]]></description>
-            <content:encoded><![CDATA[<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>]]></content:encoded>
-            <category>Hola</category>
             <category>Docusaurus</category>
         </item>
     </channel>
