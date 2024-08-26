@@ -1,0 +1,8 @@
+{
+    "label": "Core.Agent Proxy API",
+    "position": 3,
+    "link": {
+        "type": "generated-index",
+        "description": "CoreDotAgent Proxy API 사용하기"
+    }
+}
