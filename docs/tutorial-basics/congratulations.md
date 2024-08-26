@@ -10,10 +10,5 @@ websocket이 아닌 Raw API를 사용하고 싶다면 **[Core.Agent Proxy](../co
 
 ## What's next?
 
--   Read the [official documentation](https://docusaurus.io/)
--   Modify your site configuration with [`docusaurus.config.js`](https://docusaurus.io/docs/api/docusaurus-config)
--   Add navbar and footer items with [`themeConfig`](https://docusaurus.io/docs/api/themes/configuration)
--   Add a custom [Design and Layout](https://docusaurus.io/docs/styling-layout)
--   Add a [search bar](https://docusaurus.io/docs/search)
--   Find inspirations in the [Docusaurus showcase](https://docusaurus.io/showcase)
--   Get involved in the [Docusaurus Community](https://docusaurus.io/community/support)
+-   [프롬프트 엔지니어링 가이드](https://www.promptingguide.ai/kr)
+-   [Prompt Engineering Guide](https://www.promptingguide.ai/kr)

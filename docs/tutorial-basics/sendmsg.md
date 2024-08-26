@@ -1,73 +1,18 @@
 ---
-sidebar_position: 1
+sidebar_position: 2
 ---
 
-# chldo Websocket 시작하기
-
-chldo Websocket은 버전으로 구분되며, 2024-07-01 기준으로 v3를 사용합니다.
-아래 튜토리얼은 v3를 기준으로 작성되었습니다.
-
-# chldo Websocket의 상태
-
-websocket은 크게 4가지 상태로 구분됩니다.
-
-1. **$connect** : 웹소켓 연결
-2. **$disconnect** : 웹소켓 연결해제
-3. **sendmsg** : 메시지 보내기 (action)
-4. **status** : 상태 조회하기 (action)
-
-# chldo Websocket 연결하기(connect)
-
-## 새로운 room 연결하기
-
-chldo Websocket의 connection은 새로운 대화방을 하나 개설하는 것과 같습니다.
-신규 대화방 연결을 위해서 room_uid 하나를 생성해 주세요
-
--   신규 room_uid 생성하기 : https://info.api.chldo.com/v3/room/uid/
-
-생성한 room_uid를 파라미터에 넣어 websocket을 접속합니다.
-
-```
-wss://ws.api.chldo.com/v3/?room_uid=0e06AFuOYA0w&user_uid=s8dfkjsdf
-```
-
-연결된 상태를 확인하고 싶다면 다음과 같이 메시지를 보내보세요
-
-```json
-{
-    "action": "status"
-}
-```
-
-연결이 잘 되었다면 다음과 같은 메시지가 수신됩니다.
-
-```json
-{
-    "status": "connected",
-    "connection_id": "dGQ-hd9UoE0CEFQ=",
-    "msgtype": "info"
-}
-```
-
-## 기존 room 연결하기
-
-기존 room에 연결하고 싶다면 해당 room의 room_uid로 접속하세요
-
-```
-wss://ws.api.chldo.com/v3/?room_uid=0e06AFuOYA0w&user_uid=s8dfkjsdf
-```
-
-# 메시지 보내기
+# 메시지 보내기(sendmsg)
 
 메시지는 다음과 같이 보낼 수 있습니다
 
-```json title="WSS 발송값"
+```json title="WSS 발송값"  {5}
 {
     "action": "sendmsg",
-    "org_id": "s8dfkjsdf",
     "room_uid": "51VPKp3F0yPX",
     "user_id": "s8dfkjsdf",
-    "msg": "안녕 반가워요"
+    "msg": "안녕 반가워요",
+    "api_key": "d4a3653a4ba72d6e04a293"
 }
 ```
 
@@ -75,7 +20,19 @@ wss://ws.api.chldo.com/v3/?room_uid=0e06AFuOYA0w&user_uid=s8dfkjsdf
 
 v3는 langchain의 규약을 따릅니다.
 
-```json title="WSS 수신값"
+```json title="WSS 수신값" {23-69}
+{"status":"START","connection_id":"dHB2vcYVIE0CI3Q=","msg":"","cAt":"1724664268.459471","return_voice":0,"msgtype":"info"}
+
+{"status":"received","connection_id":"dHB2vcYVIE0CI3Q=","msg":"메시지를 전달 받았습니다.","msgtype":"info"}
+
+{"status":"memory","connection_id":"dHB2vcYVIE0CI3Q=","msg":"기억을 찾고 있습니다.","msgtype":"info"}
+
+{"status":"memory","connection_id":"dHB2vcYVIE0CI3Q=","msg":"기억에 연결하였습니다.","msgtype":"info"}
+
+{"status":"memory","connection_id":"dHB2vcYVIE0CI3Q=","msg":"기억을 재생 중입니다.","msgtype":"info"}
+
+{"status":"think","connection_id":"dHB2vcYVIE0CI3Q=","msg":"생각을 시작합니다.","msgtype":"info"}
+
 {"event":"on_chain_start","data":{},"run_id":"674b2731-fda9-4660-b81e-39d2b2c76e16","parent_ids":[],"tags":[]}
 
 {"event":"on_chain_start","data":{},"run_id":"9c6f5d4b-afee-41e7-a1d2-a9e2f51e27ab","parent_ids":["674b2731-fda9-4660-b81e-39d2b2c76e16"],"tags":["graph:step:18","langsmith:hidden"]}
@@ -149,6 +106,10 @@ v3는 langchain의 규약을 따릅니다.
 {"event":"on_chain_stream","data":{"chunk":{"model":{"messages":[{"role":"assistant","content":"안녕~ 또 만나서 반가워! 계속 인사하네. 뭔가 더 이야기해볼래?","tool_calls":null}]}}},"run_id":"674b2731-fda9-4660-b81e-39d2b2c76e16","parent_ids":[],"tags":[]}
 
 {"event":"on_chain_end","data":{},"run_id":"674b2731-fda9-4660-b81e-39d2b2c76e16","parent_ids":[],"tags":[]}
+
+{"status":"think","connection_id":"dHB2vcYVIE0CI3Q=","msg":"생각이 끝났습니다.","msgtype":"info"}
+
+{"status":"END","connection_id":"dHB2vcYVIE0CI3Q=","msg":"<EOM>","cAt":"1724664268.459471","return_voice":0,"msgtype":"info"}
 ```
 
 사용자가 구성한 Graph에 따라 각 작동 상태가 반환되며, 일반적으로 다음과 같이 작동합니다.
@@ -161,3 +122,111 @@ v3는 langchain의 규약을 따릅니다.
 `on_chain_start`과 `on_chain_end` 사이에서 chat과 tool이 작동하며, 이에 대한 상태는 `on_chat_model_stream`과 `on_chain_stream`로 구분되어 제공됩니다.
 
 스트림되는 정보를 수신할 때는 `on_chat_model_stream`을 사용하며, 완성된 정보만 수신할 때는 `on_chain_stream`에서 "data.chunk.messages" 또는 "data.chunk.model.messages"를 활용하세요.
+
+## 에러의 종류
+
+### 필수 파라미터가 없을 때
+
+```json title="api_key가 없을 때" {4}
+{
+    "status": "connected",
+    "connection_id": "dGXjCf1qIE0CJ5A=",
+    "msg": "api_key is required",
+    "msgtype": "error"
+}
+```
+
+```json title="msg가 없을 때" {4}
+{
+    "status": "connected",
+    "connection_id": "dGXjCf1qIE0CJ5A=",
+    "msg": "msg is required",
+    "msgtype": "error"
+}
+```
+
+```json title="room_uid가 없을 때" {4}
+{
+    "status": "connected",
+    "connection_id": "dGXjCf1qIE0CJ5A=",
+    "msg": "room_uid is required",
+    "msgtype": "error"
+}
+```
+
+```json title="user_id가 없을 때" {4}
+{
+    "status": "connected",
+    "connection_id": "dGXjCf1qIE0CJ5A=",
+    "msg": "user_id is required",
+    "msgtype": "error"
+}
+```
+
+### `api_key` 관련
+
+```json title="입력한 api_key가 존재하지 않을 때" {4}
+{
+    "status": "connected",
+    "connection_id": "dGXjCf1qIE0CJ5A=",
+    "msg": "api_key is not exist"",
+    "msgtype": "error"
+}
+```
+
+```json title="api_key가 사용할 수 없을 때" {4}
+{
+    "status": "connected",
+    "connection_id": "dGXjCf1qIE0CJ5A=",
+    "msg": "api_key is not usable",
+    "msgtype": "error"
+}
+```
+
+### `return_voice` 관련
+
+-   `return_voice`는 `0`(음성 반환하지 않음) 또는 `1`(음성 반환)이어야 합니다.
+-   입력을 하지 않는 경우, chldo 환경설정에서 입력한 값을 기본으로 사용합니다.
+
+```json title="return_voice의 값을 잘못 입력하였을 때" {4}
+{
+    "status": "connected",
+    "connection_id": "dGXjCf1qIE0CJ5A=",
+    "msg": "return_voice must be a number (0, 1, '0', or '1')",
+    "msgtype": "error"
+}
+```
+
+### 생각에 실패했을 때
+
+-   `status:think` 이후 실제 LLM API에서 에러가 발생할 수 있습니다. 그 때는 `msgtype:error`와 에러 내용을 반환합니다.
+
+```json {23}
+{"status":"START","connection_id":"dHB2vcYVIE0CI3Q=","msg":"","cAt":"1724665498.315137","return_voice":0,"msgtype":"info"}
+
+{"status":"received","connection_id":"dHB2vcYVIE0CI3Q=","msg":"메시지를 전달 받았습니다.","msgtype":"info"}
+
+{"status":"memory","connection_id":"dHB2vcYVIE0CI3Q=","msg":"기억을 찾고 있습니다.","msgtype":"info"}
+
+{"status":"memory","connection_id":"dHB2vcYVIE0CI3Q=","msg":"기억에 연결하였습니다.","msgtype":"info"}
+
+{"status":"memory","connection_id":"dHB2vcYVIE0CI3Q=","msg":"기억을 재생 중입니다.","msgtype":"info"}
+
+{"status":"think","connection_id":"dHB2vcYVIE0CI3Q=","msg":"생각을 시작합니다.","msgtype":"info"}
+
+{"event":"on_chain_start","data":{},"run_id":"124ea5fe-5f6a-4207-bb98-fcb36b84a3c6","parent_ids":[],"tags":[]}
+
+{"event":"on_chain_start","data":{},"run_id":"f8a705e4-c05c-4e53-a0f2-a262f10f32d8","parent_ids":["124ea5fe-5f6a-4207-bb98-fcb36b84a3c6"],"tags":["graph:step:12","langsmith:hidden"]}
+
+{"event":"on_chain_end","data":{},"run_id":"f8a705e4-c05c-4e53-a0f2-a262f10f32d8","parent_ids":["124ea5fe-5f6a-4207-bb98-fcb36b84a3c6"],"tags":["graph:step:12","langsmith:hidden"]}
+
+{"event":"on_chain_start","data":{},"run_id":"8b95da5f-2246-4820-9e19-1ac58841d216","parent_ids":["124ea5fe-5f6a-4207-bb98-fcb36b84a3c6"],"tags":["graph:step:13"]}
+
+{"event":"on_chat_model_start","data":{},"run_id":"12d97563-69e3-44ac-a13c-dfb8eb13567d","parent_ids":["124ea5fe-5f6a-4207-bb98-fcb36b84a3c6","8b95da5f-2246-4820-9e19-1ac58841d216"],"tags":["seq:step:1","agent_llm"]}
+
+{"status":"connected","connection_id":"dHB2vcYVIE0CI3Q=","msg":"Error code: 404 - {'status': 'failure', 'message': 'API_KEY does not exist.'}","msgtype":"error"}
+
+{"status":"think","connection_id":"dHB2vcYVIE0CI3Q=","msg":"생각이 끝났습니다.","msgtype":"info"}
+
+{"status":"END","connection_id":"dHB2vcYVIE0CI3Q=","msg":"","cAt":"1724665498.315137","return_voice":0,"msgtype":"info"}
+```
