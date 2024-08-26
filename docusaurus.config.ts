@@ -5,7 +5,7 @@ import type * as Preset from "@docusaurus/preset-classic";
 const config: Config = {
     title: "chldo AI Guide",
     tagline: "당신의 최애 AI, 직접 만들고 대화하세요",
-    favicon: "img/favicon.ico",
+    favicon: "img/fav.ico",
 
     // Set the production url of your site here
     url: "https://chldo.github.io",

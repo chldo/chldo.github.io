@@ -230,3 +230,35 @@ v3는 langchain의 규약을 따릅니다.
 
 {"status":"END","connection_id":"dHB2vcYVIE0CI3Q=","msg":"","cAt":"1724665498.315137","return_voice":0,"msgtype":"info"}
 ```
+
+### 크레딧이 100원 이상 없을 때
+
+-   크레딧은 100원 이상 존재해야 사용이 가능합니다.
+
+```json {21}
+{"status":"START","connection_id":"dHJhYfclIE0CIgw=","msg":"","cAt":"1724668002.040226","return_voice":0,"msgtype":"info"}
+
+{"status":"received","connection_id":"dHJhYfclIE0CIgw=","msg":"메시지를 전달 받았습니다.","msgtype":"info"}
+
+{"status":"memory","connection_id":"dHJhYfclIE0CIgw=","msg":"기억을 찾고 있습니다.","msgtype":"info"}
+
+{"status":"memory","connection_id":"dHJhYfclIE0CIgw=","msg":"기억에 연결하였습니다.","msgtype":"info"}
+
+{"status":"memory","connection_id":"dHJhYfclIE0CIgw=","msg":"기억을 재생 중입니다.","msgtype":"info"}
+
+{"status":"think","connection_id":"dHJhYfclIE0CIgw=","msg":"생각을 시작합니다.","msgtype":"info"}
+
+{"event":"on_chain_start","data":{},"run_id":"bf35bbbc-7383-4dc5-8978-12796d9caaa3","parent_ids":[],"tags":[]}
+
+{"event":"on_chain_start","data":{},"run_id":"2b5343bd-c27f-4173-9015-393582490a16","parent_ids":["bf35bbbc-7383-4dc5-8978-12796d9caaa3"],"tags":["graph:step:18","langsmith:hidden"]}
+
+{"event":"on_chain_end","data":{},"run_id":"2b5343bd-c27f-4173-9015-393582490a16","parent_ids":["bf35bbbc-7383-4dc5-8978-12796d9caaa3"],"tags":["graph:step:18","langsmith:hidden"]}
+
+{"event":"on_chain_start","data":{},"run_id":"ca9d2707-f8d9-465a-a464-c02b9454f661","parent_ids":["bf35bbbc-7383-4dc5-8978-12796d9caaa3"],"tags":["graph:step:19"]}
+
+{"status":"connected","connection_id":"dHJhYfclIE0CIgw=","msg":"현재 크레딧은 0 입니다. 크레딧이 100원 이상 필요합니다.","msgtype":"error"}
+
+{"status":"think","connection_id":"dHJhYfclIE0CIgw=","msg":"생각이 끝났습니다.","msgtype":"info"}
+
+{"status":"END","connection_id":"dHJhYfclIE0CIgw=","msg":"","cAt":"1724668002.040226","return_voice":0,"msgtype":"info"}
+```
