@@ -15,7 +15,7 @@ Chldo.com에서 적용한 음성을 출력할 수 있습니다.
 
 ### 음성 반환 예시
 
-```json
+```json {7}
 {
     "action": "sendmsg",
     "room_uid": "31VPKp3F0yPX",

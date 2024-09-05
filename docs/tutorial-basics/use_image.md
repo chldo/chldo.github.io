@@ -50,10 +50,9 @@ else:
 
 -   업로드한 파일의 파일명을 이용하여 대화합니다.
 
-```json
+```json {7}
 {
     "action": "sendmsg",
-    "org_id": "org_2laPkMJTagQWnkOPpgISd2FJxFE",
     "room_uid": "nSNJ31yA956THdQ3xN4s",
     "user_id": "s8dfkjsdf",
     "api_key": "43b52d9729a6b3d194f5b2",
