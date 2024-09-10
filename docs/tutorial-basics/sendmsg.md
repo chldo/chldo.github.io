@@ -210,7 +210,7 @@ v3는 langchain의 규약을 따릅니다.
 -   `status:think` 이후 실제 LLM API에서 에러가 발생할 수 있습니다. 그 때는 `msgtype:error`와 에러 내용을 반환합니다.
 
 ```json {23}
-{"status":"START","connection_id":"dHB2vcYVIE0CI3Q=","msg":"","cAt":"1724665498.315137","return_voice":0,"msgtype":"info"}
+{"status":"START","connection_id":"dHB2vcYVIE0CI3Q=","msg":"<SOM>","cAt":"1724665498.315137","return_voice":0,"msgtype":"info"}
 
 {"status":"received","connection_id":"dHB2vcYVIE0CI3Q=","msg":"메시지를 전달 받았습니다.","msgtype":"info"}
 
@@ -236,7 +236,7 @@ v3는 langchain의 규약을 따릅니다.
 
 {"status":"think","connection_id":"dHB2vcYVIE0CI3Q=","msg":"생각이 끝났습니다.","msgtype":"info"}
 
-{"status":"END","connection_id":"dHB2vcYVIE0CI3Q=","msg":"","cAt":"1724665498.315137","return_voice":0,"msgtype":"info"}
+{"status":"END","connection_id":"dHB2vcYVIE0CI3Q=","msg":"<EOM>","cAt":"1724665498.315137","return_voice":0,"msgtype":"info"}
 ```
 
 ### 크레딧이 100원 이상 없을 때
@@ -244,7 +244,7 @@ v3는 langchain의 규약을 따릅니다.
 -   크레딧은 100원 이상 존재해야 사용이 가능합니다.
 
 ```json {21}
-{"status":"START","connection_id":"dHJhYfclIE0CIgw=","msg":"","cAt":"1724668002.040226","return_voice":0,"msgtype":"info"}
+{"status":"START","connection_id":"dHJhYfclIE0CIgw=","msg":"<SOM>","cAt":"1724668002.040226","return_voice":0,"msgtype":"info"}
 
 {"status":"received","connection_id":"dHJhYfclIE0CIgw=","msg":"메시지를 전달 받았습니다.","msgtype":"info"}
 
@@ -268,5 +268,5 @@ v3는 langchain의 규약을 따릅니다.
 
 {"status":"think","connection_id":"dHJhYfclIE0CIgw=","msg":"생각이 끝났습니다.","msgtype":"info"}
 
-{"status":"END","connection_id":"dHJhYfclIE0CIgw=","msg":"","cAt":"1724668002.040226","return_voice":0,"msgtype":"info"}
+{"status":"END","connection_id":"dHJhYfclIE0CIgw=","msg":"<EOM>","cAt":"1724668002.040226","return_voice":0,"msgtype":"info"}
 ```
