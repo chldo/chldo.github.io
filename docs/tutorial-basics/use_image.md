@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 5
 ---
 
 # AI 비전 기능 사용
@@ -57,6 +57,7 @@ else:
     "user_id": "s8dfkjsdf",
     "api_key": "43b52d9729a6b3d194f5b2",
     "return_voice": 1,
+    "msg": "이 사진은 무엇인가요",
     "filename": "test.jpg"
 }
 ```
