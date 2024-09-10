@@ -8,8 +8,9 @@ sidebar_position: 3
 
 -   `api_key`에는 스페이스 정보가 포함되어 있어서 별개의 정보를 기입하지 않습니다.
 -   `api_key`로 정보를 식별하며, 이 식별된 정보를 사용하여 대화할 공간으로 `room_uid`를 사용합니다.
+-   `msg`는 필수 입력값이 아닙니다. 생략하여서도 메시지 보내기가 가능합니다.
 
-```json title="WSS 발송값"  {5}
+```json title="WSS 발송값"  {2,5}
 {
     "action": "sendmsg",
     "room_uid": "51VPKp3F0yPX",

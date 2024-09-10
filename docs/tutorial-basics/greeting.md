@@ -11,7 +11,7 @@ chldo.com에서 설정한 인사말을 수신할 수 있습니다.
 -   `greeting_number`이 없으면 기본값으로 `1`이 사용됩니다.
 -   `greeting_number`는 chldo.com에서 지정한 정수값을 사용합니다.
 
-```json
+```json {2,6}
 {
     "action": "greeting",
     "room_uid": "51VPKp3F0yP3",
@@ -33,12 +33,13 @@ chldo.com에서 설정한 인사말을 수신할 수 있습니다.
 
 -   `"return_voice": 1`을 추가합니다
 
-```json {5}
+```json {2,6,7}
 {
     "action": "greeting",
     "room_uid": "51VPKp3F0yP3",
     "api_key": "15b25d9729a6b3d196f2b5",
     "user_id": "test",
+    "return_voice": 1,
     "greeting_number": 1
 }
 ```
