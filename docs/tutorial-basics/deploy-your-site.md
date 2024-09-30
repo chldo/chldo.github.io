@@ -2,30 +2,46 @@
 sidebar_position: 10
 ---
 
-# Deploy your site
+# 메모리 사용
 
-Docusaurus is a **static-site-generator** (also called **[Jamstack](https://jamstack.org/)**).
+에이전트는 메모리(기억)을 가지도록 하여, 부가적인 기능들을 활용할 수 있습니다. 20240930 기준 메모리는 장기 기억만 사용할 수 있습니다. 장기 기억이란 모든 상황에서 항상 참고하는 기억을 말합니다.
 
-It builds your site as simple **static HTML, JavaScript and CSS files**.
+메모리를 사용하기 위해서는 `핫워드 사용 여부`를 `true`로 설정해야 합니다. (chldo.com에서 파랑색으로 변경)
 
-## Build your site
+## 1. 인식 키워드 설정
 
-Build your site **for production**:
+대화나 문맥에서 인식할 수 있는 키워드를 설정합니다.
 
-```bash
-npm run build
-```
+예를 들어, 인식 키워드는 다음과 같이 한 묶음으로 지정할 수 있습니다.
 
-The static files are generated in the `build` folder.
+-   조말론
+-   조 말론 런던
+-   조 말론
+-   Jo Malone
 
-## Deploy your site
+인식은 위에서부터 아래대로 순서대로 진행됩니다.
 
-Test your production build locally:
+예를 들어, `조말론`이 인식되었다면, 이 묶음의 다른 인식 키워드는 무시되며, 해당 메모리가 즉시 사용됩니다.
 
-```bash
-npm run serve
-```
+인식된 메모리는 websocket 통신에서 즉시 수신자에게 전달됩니다.
 
-The `build` folder is now served at [http://localhost:3000/](http://localhost:3000/).
+이 때 수신되는 형태는 2가지 입니다.
 
-You can now deploy the `build` folder **almost anywhere** easily, **for free** or very small cost (read the **[Deployment Guide](https://docusaurus.io/docs/deployment)**).
+### 수신의 형태 1-1. 사전형 메모리가 있는 경우
+
+키-값 형태로 저장된 데이터가 있는 경우에는, 이 데이터가 웹소켓으로 전달됩니다. 주의하실 점은 단일 웹소켓 메시지의 크기는 제한되어 있습니다. 크기를 넘어가는 웹소켓 메시지는 발송에 실패할 수 있습니다.
+
+-   WebSocket 프레임 크기 할당량 : 32KB 이하의 데이터
+-   큰 메시지(또는 큰 프레임 크기)가 수신되면 코드 1009와 함께 연결이 해제됩니다.
+
+### 수신의 형태 1-2. 사전형 메모리가 없는 경우
+
+메모리의 고유 주소(uid)만 웹소켓으로 전달됩니다. 이 경우 Restful API를 통해 메모리를 조회할 수 있습니다.
+
+Rest API를 이용해 텍스트형 메모리의 값을 조회할 수 있습니다.
+
+-   Restful API Endpoint :
+
+## 2. 메모리 사용
+
+메모리를 사용하기 위해서는 `핫워드 사용 여부`를 `true`로 설정해야 합니다. (chldo.com에서 파랑색으로 변경)
