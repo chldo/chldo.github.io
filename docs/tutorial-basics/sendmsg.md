@@ -131,6 +131,22 @@ v3는 langchain의 규약을 따릅니다.
 
 스트림되는 정보를 수신할 때는 `on_chat_model_stream`을 사용하며, 완성된 정보만 수신할 때는 `on_chain_stream`에서 "data.chunk.messages" 또는 "data.chunk.model.messages"를 활용하세요.
 
+## 파라미터의 종류
+
+-   `stream`
+
+-   `model`
+
+-   `no_save`
+
+-   `no_history`
+
+## 메시지 변수 종류
+
+-   {{visitor_name}}
+
+-   {{history}}
+
 ## 에러의 종류
 
 ### 필수 파라미터가 없을 때
