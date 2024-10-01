@@ -143,9 +143,9 @@ v3는 langchain의 규약을 따릅니다.
 
 ## 메시지 변수 종류
 
--   {{visitor_name}}
+-   `{{visitor_name}}`
 
--   {{history}}
+-   `{{history}}`
 
 ## 에러의 종류
 
@@ -193,7 +193,7 @@ v3는 langchain의 규약을 따릅니다.
 {
     "status": "connected",
     "connection_id": "dGXjCf1qIE0CJ5A=",
-    "msg": "api_key is not exist"",
+    "msg": "api_key is not exist",
     "msgtype": "error"
 }
 ```
