@@ -81,7 +81,7 @@ Rest API를 이용해 텍스트형 메모리의 값을 조회할 수 있습니�
     "connection_id": "dHB2vcYVIE0CI3Q=",
     "msg": "핫워드 '도손'이 감지되었습니다.",
     "hotword": "도손",
-    "uid": "d3609c2758b7aa6b9",
+    "hotword_uid": "d3609c2758b7aa6b9",
     "msgtype": "info"
 }
 ```
@@ -96,7 +96,7 @@ Rest API를 이용해 텍스트형 메모리의 값을 조회할 수 있습니�
     "connection_id": "dHB2vcYVIE0CI3Q=",
     "msg": "{\"memo\":\"도손에 대한 추가 설명\"}",
     "hotword": "도손",
-    "uid": "d3609c2758b7aa6b9",
+    "hotword_uid": "d3609c2758b7aa6b9",
     "msgtype": "hotword"
 }
 ```
@@ -145,9 +145,9 @@ Rest API를 이용해 텍스트형 메모리의 값을 조회할 수 있습니�
 
 {"status":"stream","event":"on_chat_model_stream","data":{"chunk":{"content":"도"}},"connection_id":"e-z2odI2oE0CF9Q=","msg":"도","is_stream":true,"msgtype":"stream"}
 
-{"status":"hotword_detected","connection_id":"e-z2odI2oE0CF9Q=","msg":"핫워드 \"도손\"가 감지되었습니다.","hotword":"도손","uid":"d3609c2758b7aa6b9","msgtype":"info"}
+{"status":"hotword_detected","connection_id":"e-z2odI2oE0CF9Q=","msg":"핫워드 \"도손\"가 감지되었습니다.","hotword":"도손","hotword_uid":"d3609c2758b7aa6b9","msgtype":"info"}
 
-{"status":"memory_dict","connection_id":"e-z2odI2oE0CF9Q=","msg":"[{\"v\": \"\\ubca0\\uc2a4\\ud2b8 \\uc140\\ub7ec \\ub3c4 \\uc190\\uc740 \\ubca0\\ud2b8\\ub0a8 \\ud558\\ub871\\ubca0\\uc774\\uc758 \\uacbd\\uacc4\\ub85c \\uc0c1\\uc0c1\\uc758 \\ub098\\ub798\\ub97c \\ud3bc\\uce58\\uac8c \\ud569\\ub2c8\\ub2e4. \\ub3c4 \\uc190\\uc758 \\ud574\\uc548 \\ub9c8\\uc744\\uc5d0\\uc11c \\uc5ec\\ub984 \\ubc14\\ub2f7\\ubc14\\ub78c\\uc5d0 \\uc2e4\\ub824\\uc628 \\ud29c\\ubca0\\ub8e8\\uc988\\uc758 \\uaf43 \\ud5a5\\uae30\\uc5d0 \\ub300\\ud55c \\uae30\\uc5b5\\uc785\\ub2c8\\ub2e4.\", \"k\": \"desc\"}, {\"v\": \"\\ud29c\\ubca0\\ub85c\\uc988, \\uc790\\uc2a4\\ubbfc, \\uc624\\ub80c\\uc9c0 \\ube14\\ub85c\\uc378, \\ub9c8\\ub9b0\\uc5b4\\ucf54\\ub4dc\", \"k\": \"note\"}, {\"v\": \"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeK0oicAfdpnnVOhN2uvrRzmuOZZ-Gx_h3DQ&s\", \"k\": \"image_url\"}]","hotword":"도손","uid":"d3609c2758b7aa6b9","msgtype":"hotword"}
+{"status":"memory_dict","connection_id":"e-z2odI2oE0CF9Q=","msg":"[{\"v\": \"\\ubca0\\uc2a4\\ud2b8 \\uc140\\ub7ec \\ub3c4 \\uc190\\uc740 \\ubca0\\ud2b8\\ub0a8 \\ud558\\ub871\\ubca0\\uc774\\uc758 \\uacbd\\uacc4\\ub85c \\uc0c1\\uc0c1\\uc758 \\ub098\\ub798\\ub97c \\ud3bc\\uce58\\uac8c \\ud569\\ub2c8\\ub2e4. \\ub3c4 \\uc190\\uc758 \\ud574\\uc548 \\ub9c8\\uc744\\uc5d0\\uc11c \\uc5ec\\ub984 \\ubc14\\ub2f7\\ubc14\\ub78c\\uc5d0 \\uc2e4\\ub824\\uc628 \\ud29c\\ubca0\\ub8e8\\uc988\\uc758 \\uaf43 \\ud5a5\\uae30\\uc5d0 \\ub300\\ud55c \\uae30\\uc5b5\\uc785\\ub2c8\\ub2e4.\", \"k\": \"desc\"}, {\"v\": \"\\ud29c\\ubca0\\ub85c\\uc988, \\uc790\\uc2a4\\ubbfc, \\uc624\\ub80c\\uc9c0 \\ube14\\ub85c\\uc378, \\ub9c8\\ub9b0\\uc5b4\\ucf54\\ub4dc\", \"k\": \"note\"}, {\"v\": \"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeK0oicAfdpnnVOhN2uvrRzmuOZZ-Gx_h3DQ&s\", \"k\": \"image_url\"}]","hotword":"도손","hotword_uid":"d3609c2758b7aa6b9","msgtype":"hotword"}
 
 {"status":"stream","event":"on_chat_model_stream","data":{"chunk":{"content":"손"}},"connection_id":"e-z2odI2oE0CF9Q=","msg":"손","is_stream":true,"msgtype":"stream"}
 
