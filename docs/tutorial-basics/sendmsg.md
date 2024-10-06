@@ -28,96 +28,100 @@ sidebar_position: 3
 
 v3는 langchain의 규약을 따릅니다.
 
-```json title="WSS 수신값" {23-69}
-{"status":"START","connection_id":"dHB2vcYVIE0CI3Q=","msg":"<SOM>","cAt":"1724664268.459471","return_voice":0,"msgtype":"info"}
+```json title="WSS 수신값" {13-87}
+{"status":"START","connection_id":"fO4rVc0XIE0CIyQ=","room_uid":"11VPKp3F0yPX","stream_uid":"BfS806fFPYoi00yn9cJx04X0b","msg":"","is_stream":true,"cAt":"1728225853.259402","return_voice":1,"msgtype":"info"}
 
-{"status":"received","connection_id":"dHB2vcYVIE0CI3Q=","msg":"메시지를 전달 받았습니다.","msgtype":"info"}
+{"status":"history","connection_id":"fO4rVc0XIE0CIyQ=","stream_uid":"BfS806fFPYoi00yn9cJx04X0b","room_uid":"11VPKp3F0yPX","msg":"대화 기억을 찾고 있습니다.","is_stream":true,"msgtype":"info"}
 
-{"status":"memory","connection_id":"dHB2vcYVIE0CI3Q=","msg":"기억을 찾고 있습니다.","msgtype":"info"}
+{"status":"history","connection_id":"fO4rVc0XIE0CIyQ=","stream_uid":"BfS806fFPYoi00yn9cJx04X0b","room_uid":"11VPKp3F0yPX","msg":"대화 기억을 재생하였습니다.","is_stream":true,"msgtype":"info"}
 
-{"status":"memory","connection_id":"dHB2vcYVIE0CI3Q=","msg":"기억에 연결하였습니다.","msgtype":"info"}
+{"status":"memory","connection_id":"fO4rVc0XIE0CIyQ=","stream_uid":"BfS806fFPYoi00yn9cJx04X0b","room_uid":"11VPKp3F0yPX","msg":"저장된 메모리를 찾고 있습니다.","is_stream":true,"msgtype":"info"}
 
-{"status":"memory","connection_id":"dHB2vcYVIE0CI3Q=","msg":"기억을 재생 중입니다.","msgtype":"info"}
+{"status":"memory","connection_id":"fO4rVc0XIE0CIyQ=","stream_uid":"BfS806fFPYoi00yn9cJx04X0b","room_uid":"11VPKp3F0yPX","msg":"저장된 메모리를 찾았습니다. 핫워드 수신으로 설정된 메모리는 총 0개 입니다.","is_stream":true,"msgtype":"info"}
 
-{"status":"think","connection_id":"dHB2vcYVIE0CI3Q=","msg":"생각을 시작합니다.","msgtype":"info"}
+{"status":"think","connection_id":"fO4rVc0XIE0CIyQ=","stream_uid":"BfS806fFPYoi00yn9cJx04X0b","room_uid":"11VPKp3F0yPX","msg":"생각을 시작합니다.","is_stream":true,"msgtype":"info"}
 
-{"event":"on_chain_start","data":{},"run_id":"674b2731-fda9-4660-b81e-39d2b2c76e16","parent_ids":[],"tags":[]}
+{"status":"stream","connection_id":"fO4rVc0XIE0CIyQ=","stream_uid":"BfS806fFPYoi00yn9cJx04X0b","room_uid":"11VPKp3F0yPX","sent_uid":"2eWAooMd4e92hm5VQ0H6ifu27Mw3","event":"on_chat_model_stream","data":{"chunk":{"content":"안"}},"msg":"안","is_stream":true,"msgtype":"stream"}
 
-{"event":"on_chain_start","data":{},"run_id":"9c6f5d4b-afee-41e7-a1d2-a9e2f51e27ab","parent_ids":["674b2731-fda9-4660-b81e-39d2b2c76e16"],"tags":["graph:step:18","langsmith:hidden"]}
+{"status":"stream","connection_id":"fO4rVc0XIE0CIyQ=","stream_uid":"BfS806fFPYoi00yn9cJx04X0b","room_uid":"11VPKp3F0yPX","sent_uid":"2eWAooMd4e92hm5VQ0H6ifu27Mw3","event":"on_chat_model_stream","data":{"chunk":{"content":"녕하세요"}},"msg":"녕하세요","is_stream":true,"msgtype":"stream"}
 
-{"event":"on_chain_end","data":{},"run_id":"9c6f5d4b-afee-41e7-a1d2-a9e2f51e27ab","parent_ids":["674b2731-fda9-4660-b81e-39d2b2c76e16"],"tags":["graph:step:18","langsmith:hidden"]}
+{"status":"stream","connection_id":"fO4rVc0XIE0CIyQ=","stream_uid":"BfS806fFPYoi00yn9cJx04X0b","room_uid":"11VPKp3F0yPX","sent_uid":"2eWAooMd4e92hm5VQ0H6ifu27Mw3","event":"on_chat_model_stream","data":{"chunk":{"content":","}},"msg":",","is_stream":true,"msgtype":"stream"}
 
-{"event":"on_chain_start","data":{},"run_id":"69430624-53d0-4269-b8f4-e919c36686fe","parent_ids":["674b2731-fda9-4660-b81e-39d2b2c76e16"],"tags":["graph:step:19"]}
+{"status":"stream","connection_id":"fO4rVc0XIE0CIyQ=","stream_uid":"BfS806fFPYoi00yn9cJx04X0b","room_uid":"11VPKp3F0yPX","sent_uid":"2eWAooMd4e92hm5VQ0H6ifu27Mw3","event":"on_chat_model_stream","data":{"chunk":{"content":" 김"}},"msg":" 김","is_stream":true,"msgtype":"stream"}
 
-{"event":"on_chat_model_start","data":{},"run_id":"aa7ab05b-e1c9-4beb-9c9e-98c51bb918af","parent_ids":["674b2731-fda9-4660-b81e-39d2b2c76e16","69430624-53d0-4269-b8f4-e919c36686fe"],"tags":["seq:step:1","agent_llm"]}
+{"status":"stream","connection_id":"fO4rVc0XIE0CIyQ=","stream_uid":"BfS806fFPYoi00yn9cJx04X0b","room_uid":"11VPKp3F0yPX","sent_uid":"2eWAooMd4e92hm5VQ0H6ifu27Mw3","event":"on_chat_model_stream","data":{"chunk":{"content":"철"}},"msg":"철","is_stream":true,"msgtype":"stream"}
 
-{"event":"on_chat_model_stream","data":{"chunk":{"content":"안","additional_kwargs":{},"response_metadata":{},"type":"AIMessageChunk","name":null,"id":null,"example":false,"tool_calls":[],"invalid_tool_calls":[],"usage_metadata":null,"tool_call_chunks":[]}},"run_id":"aa7ab05b-e1c9-4beb-9c9e-98c51bb918af","parent_ids":["674b2731-fda9-4660-b81e-39d2b2c76e16","69430624-53d0-4269-b8f4-e919c36686fe"],"tags":["seq:step:1","agent_llm"],"sent_uid":"rZ2s3WPPAYiJlwyF9PK1cOF0Q6"}
+{"status":"stream","connection_id":"fO4rVc0XIE0CIyQ=","stream_uid":"BfS806fFPYoi00yn9cJx04X0b","room_uid":"11VPKp3F0yPX","sent_uid":"2eWAooMd4e92hm5VQ0H6ifu27Mw3","event":"on_chat_model_stream","data":{"chunk":{"content":"수"}},"msg":"수","is_stream":true,"msgtype":"stream"}
 
-{"event":"on_chat_model_stream","data":{"chunk":{"content":"녕","additional_kwargs":{},"response_metadata":{},"type":"AIMessageChunk","name":null,"id":null,"example":false,"tool_calls":[],"invalid_tool_calls":[],"usage_metadata":null,"tool_call_chunks":[]}},"run_id":"aa7ab05b-e1c9-4beb-9c9e-98c51bb918af","parent_ids":["674b2731-fda9-4660-b81e-39d2b2c76e16","69430624-53d0-4269-b8f4-e919c36686fe"],"tags":["seq:step:1","agent_llm"],"sent_uid":"rZ2s3WPPAYiJlwyF9PK1cOF0Q6"}
+{"status":"stream","connection_id":"fO4rVc0XIE0CIyQ=","stream_uid":"BfS806fFPYoi00yn9cJx04X0b","room_uid":"11VPKp3F0yPX","sent_uid":"2eWAooMd4e92hm5VQ0H6ifu27Mw3","event":"on_chat_model_stream","data":{"chunk":{"content":"님"}},"msg":"님","is_stream":true,"msgtype":"stream"}
 
-{"event":"on_chat_model_stream","data":{"chunk":{"content":"~","additional_kwargs":{},"response_metadata":{},"type":"AIMessageChunk","name":null,"id":null,"example":false,"tool_calls":[],"invalid_tool_calls":[],"usage_metadata":null,"tool_call_chunks":[]}},"run_id":"aa7ab05b-e1c9-4beb-9c9e-98c51bb918af","parent_ids":["674b2731-fda9-4660-b81e-39d2b2c76e16","69430624-53d0-4269-b8f4-e919c36686fe"],"tags":["seq:step:1","agent_llm"],"sent_uid":"rZ2s3WPPAYiJlwyF9PK1cOF0Q6"}
+{"status":"stream","connection_id":"fO4rVc0XIE0CIyQ=","stream_uid":"BfS806fFPYoi00yn9cJx04X0b","room_uid":"11VPKp3F0yPX","sent_uid":"2eWAooMd4e92hm5VQ0H6ifu27Mw3","event":"on_chat_model_stream","data":{"chunk":{"content":"!"}},"msg":"!","is_stream":true,"msgtype":"stream"}
 
-{"event":"on_chat_model_stream","data":{"chunk":{"content":" 또","additional_kwargs":{},"response_metadata":{},"type":"AIMessageChunk","name":null,"id":null,"example":false,"tool_calls":[],"invalid_tool_calls":[],"usage_metadata":null,"tool_call_chunks":[]}},"run_id":"aa7ab05b-e1c9-4beb-9c9e-98c51bb918af","parent_ids":["674b2731-fda9-4660-b81e-39d2b2c76e16","69430624-53d0-4269-b8f4-e919c36686fe"],"tags":["seq:step:1","agent_llm"],"sent_uid":"rZ2s3WPPAYiJlwyF9PK1cOF0Q6"}
+{"status":"stream","connection_id":"fO4rVc0XIE0CIyQ=","stream_uid":"BfS806fFPYoi00yn9cJx04X0b","room_uid":"11VPKp3F0yPX","sent_uid":"2eWAooMd4e92hm5VQ0H6ifu27Mw3","event":"on_chat_model_stream","data":{"chunk":{"content":" 반"}},"msg":" 반","is_stream":true,"msgtype":"stream"}
 
-{"event":"on_chat_model_stream","data":{"chunk":{"content":" 만나","additional_kwargs":{},"response_metadata":{},"type":"AIMessageChunk","name":null,"id":null,"example":false,"tool_calls":[],"invalid_tool_calls":[],"usage_metadata":null,"tool_call_chunks":[]}},"run_id":"aa7ab05b-e1c9-4beb-9c9e-98c51bb918af","parent_ids":["674b2731-fda9-4660-b81e-39d2b2c76e16","69430624-53d0-4269-b8f4-e919c36686fe"],"tags":["seq:step:1","agent_llm"],"sent_uid":"rZ2s3WPPAYiJlwyF9PK1cOF0Q6"}
+{"status":"stream","connection_id":"fO4rVc0XIE0CIyQ=","stream_uid":"BfS806fFPYoi00yn9cJx04X0b","room_uid":"11VPKp3F0yPX","sent_uid":"2eWAooMd4e92hm5VQ0H6ifu27Mw3","event":"on_chat_model_stream","data":{"chunk":{"content":"갑"}},"msg":"갑","is_stream":true,"msgtype":"stream"}
 
-{"event":"on_chat_model_stream","data":{"chunk":{"content":"서","additional_kwargs":{},"response_metadata":{},"type":"AIMessageChunk","name":null,"id":null,"example":false,"tool_calls":[],"invalid_tool_calls":[],"usage_metadata":null,"tool_call_chunks":[]}},"run_id":"aa7ab05b-e1c9-4beb-9c9e-98c51bb918af","parent_ids":["674b2731-fda9-4660-b81e-39d2b2c76e16","69430624-53d0-4269-b8f4-e919c36686fe"],"tags":["seq:step:1","agent_llm"],"sent_uid":"rZ2s3WPPAYiJlwyF9PK1cOF0Q6"}
+{"status":"stream","connection_id":"fO4rVc0XIE0CIyQ=","stream_uid":"BfS806fFPYoi00yn9cJx04X0b","room_uid":"11VPKp3F0yPX","sent_uid":"2eWAooMd4e92hm5VQ0H6ifu27Mw3","event":"on_chat_model_stream","data":{"chunk":{"content":"습니다"}},"msg":"습니다","is_stream":true,"msgtype":"stream"}
 
-{"event":"on_chat_model_stream","data":{"chunk":{"content":" 반","additional_kwargs":{},"response_metadata":{},"type":"AIMessageChunk","name":null,"id":null,"example":false,"tool_calls":[],"invalid_tool_calls":[],"usage_metadata":null,"tool_call_chunks":[]}},"run_id":"aa7ab05b-e1c9-4beb-9c9e-98c51bb918af","parent_ids":["674b2731-fda9-4660-b81e-39d2b2c76e16","69430624-53d0-4269-b8f4-e919c36686fe"],"tags":["seq:step:1","agent_llm"],"sent_uid":"rZ2s3WPPAYiJlwyF9PK1cOF0Q6"}
+{"status":"voice_ready","connection_id":"fO4rVc0XIE0CIyQ=","stream_uid":"BfS806fFPYoi00yn9cJx04X0b","room_uid":"11VPKp3F0yPX","msg":"안녕하세요, 김철수님! 반갑습니다","voice_url":"https://voice.chldo.com/room_uid_voice/11VPKp3F0yPX/2eWAooMd4e92hm5VQ0H6ifu27Mw3.mp3?Expires=1728229455&Signature=FmEI5Lg1mtvF3EimVnXgr9qUzjQnnFHAnBgAawEGC8G8ttYgPC0yMlxh4xpjw7pJJ~2NrVoeprmfqSNxlg28dG3goEMjiTnZ3A-hxd7kK8O9aTxOOpLrIR5kvf8NoVn-gt14sy-DV-OACBX1ZEJ9I0gk4gKVs5S~NzNAMhKBsjJD1vspE3YMoaxYGs9K4ys6Iy1wgqN-yDgrQdBwf03gOyI3CtDzSMauD2U8WG6O-irVYJd5eiyjoDULxuhjVNt1ZgGKjZVREqm1LuyqXGE55Tie0SQCGgVamaXtZE5KNSpXDz4elv8Yh3AcWG7BCxB1g7xO026dfUHvxI5wnI4ZIg__&Key-Pair-Id=KX12RGNKWPA4Y","voice_length":2.688,"sent_uid":"2eWAooMd4e92hm5VQ0H6ifu27Mw3","is_stream":true,"msgtype":"info"}
 
-{"event":"on_chat_model_stream","data":{"chunk":{"content":"가","additional_kwargs":{},"response_metadata":{},"type":"AIMessageChunk","name":null,"id":null,"example":false,"tool_calls":[],"invalid_tool_calls":[],"usage_metadata":null,"tool_call_chunks":[]}},"run_id":"aa7ab05b-e1c9-4beb-9c9e-98c51bb918af","parent_ids":["674b2731-fda9-4660-b81e-39d2b2c76e16","69430624-53d0-4269-b8f4-e919c36686fe"],"tags":["seq:step:1","agent_llm"],"sent_uid":"rZ2s3WPPAYiJlwyF9PK1cOF0Q6"}
+{"status":"stream","connection_id":"fO4rVc0XIE0CIyQ=","stream_uid":"BfS806fFPYoi00yn9cJx04X0b","room_uid":"11VPKp3F0yPX","sent_uid":"F9UHQ574RvamYegggP0nGzTCirEi","event":"on_chat_model_stream","data":{"chunk":{"content":" 울"}},"msg":" 울","is_stream":true,"msgtype":"stream"}
 
-{"event":"on_chat_model_stream","data":{"chunk":{"content":"워","additional_kwargs":{},"response_metadata":{},"type":"AIMessageChunk","name":null,"id":null,"example":false,"tool_calls":[],"invalid_tool_calls":[],"usage_metadata":null,"tool_call_chunks":[]}},"run_id":"aa7ab05b-e1c9-4beb-9c9e-98c51bb918af","parent_ids":["674b2731-fda9-4660-b81e-39d2b2c76e16","69430624-53d0-4269-b8f4-e919c36686fe"],"tags":["seq:step:1","agent_llm"],"sent_uid":"rZ2s3WPPAYiJlwyF9PK1cOF0Q6"}
+{"status":"stream","connection_id":"fO4rVc0XIE0CIyQ=","stream_uid":"BfS806fFPYoi00yn9cJx04X0b","room_uid":"11VPKp3F0yPX","sent_uid":"F9UHQ574RvamYegggP0nGzTCirEi","event":"on_chat_model_stream","data":{"chunk":{"content":"산"}},"msg":"산","is_stream":true,"msgtype":"stream"}
 
-{"event":"on_chat_model_stream","data":{"chunk":{"content":"!","additional_kwargs":{},"response_metadata":{},"type":"AIMessageChunk","name":null,"id":null,"example":false,"tool_calls":[],"invalid_tool_calls":[],"usage_metadata":null,"tool_call_chunks":[]}},"run_id":"aa7ab05b-e1c9-4beb-9c9e-98c51bb918af","parent_ids":["674b2731-fda9-4660-b81e-39d2b2c76e16","69430624-53d0-4269-b8f4-e919c36686fe"],"tags":["seq:step:1","agent_llm"],"sent_uid":"rZ2s3WPPAYiJlwyF9PK1cOF0Q6"}
+{"status":"stream","connection_id":"fO4rVc0XIE0CIyQ=","stream_uid":"BfS806fFPYoi00yn9cJx04X0b","room_uid":"11VPKp3F0yPX","sent_uid":"F9UHQ574RvamYegggP0nGzTCirEi","event":"on_chat_model_stream","data":{"chunk":{"content":" 남"}},"msg":" 남","is_stream":true,"msgtype":"stream"}
 
-{"event":"on_chat_model_stream","data":{"chunk":{"content":" 계속","additional_kwargs":{},"response_metadata":{},"type":"AIMessageChunk","name":null,"id":null,"example":false,"tool_calls":[],"invalid_tool_calls":[],"usage_metadata":null,"tool_call_chunks":[]}},"run_id":"aa7ab05b-e1c9-4beb-9c9e-98c51bb918af","parent_ids":["674b2731-fda9-4660-b81e-39d2b2c76e16","69430624-53d0-4269-b8f4-e919c36686fe"],"tags":["seq:step:1","agent_llm"],"sent_uid":"rZ2s3WPPAYiJlwyF9PK1cOF0Q6"}
+{"status":"stream","connection_id":"fO4rVc0XIE0CIyQ=","stream_uid":"BfS806fFPYoi00yn9cJx04X0b","room_uid":"11VPKp3F0yPX","sent_uid":"F9UHQ574RvamYegggP0nGzTCirEi","event":"on_chat_model_stream","data":{"chunk":{"content":"구"}},"msg":"구","is_stream":true,"msgtype":"stream"}
 
-{"event":"on_chat_model_stream","data":{"chunk":{"content":" 인","additional_kwargs":{},"response_metadata":{},"type":"AIMessageChunk","name":null,"id":null,"example":false,"tool_calls":[],"invalid_tool_calls":[],"usage_metadata":null,"tool_call_chunks":[]}},"run_id":"aa7ab05b-e1c9-4beb-9c9e-98c51bb918af","parent_ids":["674b2731-fda9-4660-b81e-39d2b2c76e16","69430624-53d0-4269-b8f4-e919c36686fe"],"tags":["seq:step:1","agent_llm"],"sent_uid":"rZ2s3WPPAYiJlwyF9PK1cOF0Q6"}
+{"status":"stream","connection_id":"fO4rVc0XIE0CIyQ=","stream_uid":"BfS806fFPYoi00yn9cJx04X0b","room_uid":"11VPKp3F0yPX","sent_uid":"F9UHQ574RvamYegggP0nGzTCirEi","event":"on_chat_model_stream","data":{"chunk":{"content":"에서"}},"msg":"에서","is_stream":true,"msgtype":"stream"}
 
-{"event":"on_chat_model_stream","data":{"chunk":{"content":"사","additional_kwargs":{},"response_metadata":{},"type":"AIMessageChunk","name":null,"id":null,"example":false,"tool_calls":[],"invalid_tool_calls":[],"usage_metadata":null,"tool_call_chunks":[]}},"run_id":"aa7ab05b-e1c9-4beb-9c9e-98c51bb918af","parent_ids":["674b2731-fda9-4660-b81e-39d2b2c76e16","69430624-53d0-4269-b8f4-e919c36686fe"],"tags":["seq:step:1","agent_llm"],"sent_uid":"rZ2s3WPPAYiJlwyF9PK1cOF0Q6"}
+{"status":"stream","connection_id":"fO4rVc0XIE0CIyQ=","stream_uid":"BfS806fFPYoi00yn9cJx04X0b","room_uid":"11VPKp3F0yPX","sent_uid":"F9UHQ574RvamYegggP0nGzTCirEi","event":"on_chat_model_stream","data":{"chunk":{"content":"의"}},"msg":"의","is_stream":true,"msgtype":"stream"}
 
-{"event":"on_chat_model_stream","data":{"chunk":{"content":"하","additional_kwargs":{},"response_metadata":{},"type":"AIMessageChunk","name":null,"id":null,"example":false,"tool_calls":[],"invalid_tool_calls":[],"usage_metadata":null,"tool_call_chunks":[]}},"run_id":"aa7ab05b-e1c9-4beb-9c9e-98c51bb918af","parent_ids":["674b2731-fda9-4660-b81e-39d2b2c76e16","69430624-53d0-4269-b8f4-e919c36686fe"],"tags":["seq:step:1","agent_llm"],"sent_uid":"rZ2s3WPPAYiJlwyF9PK1cOF0Q6"}
+{"status":"stream","connection_id":"fO4rVc0XIE0CIyQ=","stream_uid":"BfS806fFPYoi00yn9cJx04X0b","room_uid":"11VPKp3F0yPX","sent_uid":"F9UHQ574RvamYegggP0nGzTCirEi","event":"on_chat_model_stream","data":{"chunk":{"content":" 특별"}},"msg":" 특별","is_stream":true,"msgtype":"stream"}
 
-{"event":"on_chat_model_stream","data":{"chunk":{"content":"네","additional_kwargs":{},"response_metadata":{},"type":"AIMessageChunk","name":null,"id":null,"example":false,"tool_calls":[],"invalid_tool_calls":[],"usage_metadata":null,"tool_call_chunks":[]}},"run_id":"aa7ab05b-e1c9-4beb-9c9e-98c51bb918af","parent_ids":["674b2731-fda9-4660-b81e-39d2b2c76e16","69430624-53d0-4269-b8f4-e919c36686fe"],"tags":["seq:step:1","agent_llm"],"sent_uid":"rZ2s3WPPAYiJlwyF9PK1cOF0Q6"}
+{"status":"stream","connection_id":"fO4rVc0XIE0CIyQ=","stream_uid":"BfS806fFPYoi00yn9cJx04X0b","room_uid":"11VPKp3F0yPX","sent_uid":"F9UHQ574RvamYegggP0nGzTCirEi","event":"on_chat_model_stream","data":{"chunk":{"content":"한"}},"msg":"한","is_stream":true,"msgtype":"stream"}
 
-{"event":"on_chat_model_stream","data":{"chunk":{"content":".","additional_kwargs":{},"response_metadata":{},"type":"AIMessageChunk","name":null,"id":null,"example":false,"tool_calls":[],"invalid_tool_calls":[],"usage_metadata":null,"tool_call_chunks":[]}},"run_id":"aa7ab05b-e1c9-4beb-9c9e-98c51bb918af","parent_ids":["674b2731-fda9-4660-b81e-39d2b2c76e16","69430624-53d0-4269-b8f4-e919c36686fe"],"tags":["seq:step:1","agent_llm"],"sent_uid":"rZ2s3WPPAYiJlwyF9PK1cOF0Q6"}
+{"status":"stream","connection_id":"fO4rVc0XIE0CIyQ=","stream_uid":"BfS806fFPYoi00yn9cJx04X0b","room_uid":"11VPKp3F0yPX","sent_uid":"F9UHQ574RvamYegggP0nGzTCirEi","event":"on_chat_model_stream","data":{"chunk":{"content":" 기억"}},"msg":" 기억","is_stream":true,"msgtype":"stream"}
 
-{"event":"on_chat_model_stream","data":{"chunk":{"content":" 뭔","additional_kwargs":{},"response_metadata":{},"type":"AIMessageChunk","name":null,"id":null,"example":false,"tool_calls":[],"invalid_tool_calls":[],"usage_metadata":null,"tool_call_chunks":[]}},"run_id":"aa7ab05b-e1c9-4beb-9c9e-98c51bb918af","parent_ids":["674b2731-fda9-4660-b81e-39d2b2c76e16","69430624-53d0-4269-b8f4-e919c36686fe"],"tags":["seq:step:1","agent_llm"],"sent_uid":"rZ2s3WPPAYiJlwyF9PK1cOF0Q6"}
+{"status":"stream","connection_id":"fO4rVc0XIE0CIyQ=","stream_uid":"BfS806fFPYoi00yn9cJx04X0b","room_uid":"11VPKp3F0yPX","sent_uid":"F9UHQ574RvamYegggP0nGzTCirEi","event":"on_chat_model_stream","data":{"chunk":{"content":"이"}},"msg":"이","is_stream":true,"msgtype":"stream"}
 
-{"event":"on_chat_model_stream","data":{"chunk":{"content":"가","additional_kwargs":{},"response_metadata":{},"type":"AIMessageChunk","name":null,"id":null,"example":false,"tool_calls":[],"invalid_tool_calls":[],"usage_metadata":null,"tool_call_chunks":[]}},"run_id":"aa7ab05b-e1c9-4beb-9c9e-98c51bb918af","parent_ids":["674b2731-fda9-4660-b81e-39d2b2c76e16","69430624-53d0-4269-b8f4-e919c36686fe"],"tags":["seq:step:1","agent_llm"],"sent_uid":"rZ2s3WPPAYiJlwyF9PK1cOF0Q6"}
+{"status":"stream","connection_id":"fO4rVc0XIE0CIyQ=","stream_uid":"BfS806fFPYoi00yn9cJx04X0b","room_uid":"11VPKp3F0yPX","sent_uid":"F9UHQ574RvamYegggP0nGzTCirEi","event":"on_chat_model_stream","data":{"chunk":{"content":" 있으"}},"msg":" 있으","is_stream":true,"msgtype":"stream"}
 
-{"event":"on_chat_model_stream","data":{"chunk":{"content":" 더","additional_kwargs":{},"response_metadata":{},"type":"AIMessageChunk","name":null,"id":null,"example":false,"tool_calls":[],"invalid_tool_calls":[],"usage_metadata":null,"tool_call_chunks":[]}},"run_id":"aa7ab05b-e1c9-4beb-9c9e-98c51bb918af","parent_ids":["674b2731-fda9-4660-b81e-39d2b2c76e16","69430624-53d0-4269-b8f4-e919c36686fe"],"tags":["seq:step:1","agent_llm"],"sent_uid":"rZ2s3WPPAYiJlwyF9PK1cOF0Q6"}
+{"status":"stream","connection_id":"fO4rVc0XIE0CIyQ=","stream_uid":"BfS806fFPYoi00yn9cJx04X0b","room_uid":"11VPKp3F0yPX","sent_uid":"F9UHQ574RvamYegggP0nGzTCirEi","event":"on_chat_model_stream","data":{"chunk":{"content":"신"}},"msg":"신","is_stream":true,"msgtype":"stream"}
 
-{"event":"on_chat_model_stream","data":{"chunk":{"content":" 이야기","additional_kwargs":{},"response_metadata":{},"type":"AIMessageChunk","name":null,"id":null,"example":false,"tool_calls":[],"invalid_tool_calls":[],"usage_metadata":null,"tool_call_chunks":[]}},"run_id":"aa7ab05b-e1c9-4beb-9c9e-98c51bb918af","parent_ids":["674b2731-fda9-4660-b81e-39d2b2c76e16","69430624-53d0-4269-b8f4-e919c36686fe"],"tags":["seq:step:1","agent_llm"],"sent_uid":"rZ2s3WPPAYiJlwyF9PK1cOF0Q6"}
+{"status":"stream","connection_id":"fO4rVc0XIE0CIyQ=","stream_uid":"BfS806fFPYoi00yn9cJx04X0b","room_uid":"11VPKp3F0yPX","sent_uid":"F9UHQ574RvamYegggP0nGzTCirEi","event":"on_chat_model_stream","data":{"chunk":{"content":"가"}},"msg":"가","is_stream":true,"msgtype":"stream"}
 
-{"event":"on_chat_model_stream","data":{"chunk":{"content":"해","additional_kwargs":{},"response_metadata":{},"type":"AIMessageChunk","name":null,"id":null,"example":false,"tool_calls":[],"invalid_tool_calls":[],"usage_metadata":null,"tool_call_chunks":[]}},"run_id":"aa7ab05b-e1c9-4beb-9c9e-98c51bb918af","parent_ids":["674b2731-fda9-4660-b81e-39d2b2c76e16","69430624-53d0-4269-b8f4-e919c36686fe"],"tags":["seq:step:1","agent_llm"],"sent_uid":"rZ2s3WPPAYiJlwyF9PK1cOF0Q6"}
+{"status":"stream","connection_id":"fO4rVc0XIE0CIyQ=","stream_uid":"BfS806fFPYoi00yn9cJx04X0b","room_uid":"11VPKp3F0yPX","sent_uid":"F9UHQ574RvamYegggP0nGzTCirEi","event":"on_chat_model_stream","data":{"chunk":{"content":"요"}},"msg":"요","is_stream":true,"msgtype":"stream"}
 
-{"event":"on_chat_model_stream","data":{"chunk":{"content":"볼","additional_kwargs":{},"response_metadata":{},"type":"AIMessageChunk","name":null,"id":null,"example":false,"tool_calls":[],"invalid_tool_calls":[],"usage_metadata":null,"tool_call_chunks":[]}},"run_id":"aa7ab05b-e1c9-4beb-9c9e-98c51bb918af","parent_ids":["674b2731-fda9-4660-b81e-39d2b2c76e16","69430624-53d0-4269-b8f4-e919c36686fe"],"tags":["seq:step:1","agent_llm"],"sent_uid":"rZ2s3WPPAYiJlwyF9PK1cOF0Q6"}
+{"status":"stream","connection_id":"fO4rVc0XIE0CIyQ=","stream_uid":"BfS806fFPYoi00yn9cJx04X0b","room_uid":"11VPKp3F0yPX","sent_uid":"F9UHQ574RvamYegggP0nGzTCirEi","event":"on_chat_model_stream","data":{"chunk":{"content":"?"}},"msg":"?","is_stream":true,"msgtype":"stream"}
 
-{"event":"on_chat_model_stream","data":{"chunk":{"content":"래","additional_kwargs":{},"response_metadata":{},"type":"AIMessageChunk","name":null,"id":null,"example":false,"tool_calls":[],"invalid_tool_calls":[],"usage_metadata":null,"tool_call_chunks":[]}},"run_id":"aa7ab05b-e1c9-4beb-9c9e-98c51bb918af","parent_ids":["674b2731-fda9-4660-b81e-39d2b2c76e16","69430624-53d0-4269-b8f4-e919c36686fe"],"tags":["seq:step:1","agent_llm"],"sent_uid":"rZ2s3WPPAYiJlwyF9PK1cOF0Q6"}
+{"status":"voice_ready","connection_id":"fO4rVc0XIE0CIyQ=","stream_uid":"BfS806fFPYoi00yn9cJx04X0b","room_uid":"11VPKp3F0yPX","msg":" 울산 남구에서의 특별한 기억이 있으신가요?","voice_url":"https://voice.chldo.com/room_uid_voice/11VPKp3F0yPX/F9UHQ574RvamYegggP0nGzTCirEi.mp3?Expires=1728229456&Signature=Bfa~tD0r3v~CWOPXk6KiKxiJ-ieo59V-2jWGsN5WEh~Na9i4~Iikn3YV0V1Tt~5FalRZmZffORFrGhpQ0J5VODaT8DzY3M3OLdDQMvbDnWQFo7-vx9HqOY4TwzwSvuwLEzsm3U5Zr0URxr5idUYD-XLVzWCZN3O17IMs9-h5vxnyJG7AOBdoW1tP-zuwIWcFJOdxsJd4kwIJ14NyIxQXE2zi9zTdAJWkAILEXDpfBX7LcZv8BBHq6b9MR0Ky~d1Wja59RPT0jomoRVu1LJ4rIus9SDMGhNem3-DFRGwSlMe1k2xKlVj99xldJB-f-XwTPzWnI8kzDQn~6iESKWczUg__&Key-Pair-Id=KX12RGNKWPA4Y","voice_length":3,"sent_uid":"F9UHQ574RvamYegggP0nGzTCirEi","is_stream":true,"msgtype":"info"}
 
-{"event":"on_chat_model_stream","data":{"chunk":{"content":"?","additional_kwargs":{},"response_metadata":{},"type":"AIMessageChunk","name":null,"id":null,"example":false,"tool_calls":[],"invalid_tool_calls":[],"usage_metadata":null,"tool_call_chunks":[]}},"run_id":"aa7ab05b-e1c9-4beb-9c9e-98c51bb918af","parent_ids":["674b2731-fda9-4660-b81e-39d2b2c76e16","69430624-53d0-4269-b8f4-e919c36686fe"],"tags":["seq:step:1","agent_llm"],"sent_uid":"rZ2s3WPPAYiJlwyF9PK1cOF0Q6"}
+{"status":"stream","connection_id":"fO4rVc0XIE0CIyQ=","stream_uid":"BfS806fFPYoi00yn9cJx04X0b","room_uid":"11VPKp3F0yPX","sent_uid":"51u8CEw88cixo28hW3lfAQ6Nqo3f","event":"on_chat_model_stream","data":{"chunk":{"content":" 기억"}},"msg":" 기억","is_stream":true,"msgtype":"stream"}
 
-{"event":"on_chain_start","data":{},"run_id":"e179a815-3b7b-43a0-b036-3dc4f8d4c535","parent_ids":["674b2731-fda9-4660-b81e-39d2b2c76e16","69430624-53d0-4269-b8f4-e919c36686fe"],"tags":["seq:step:2","langsmith:hidden"]}
+{"status":"stream","connection_id":"fO4rVc0XIE0CIyQ=","stream_uid":"BfS806fFPYoi00yn9cJx04X0b","room_uid":"11VPKp3F0yPX","sent_uid":"51u8CEw88cixo28hW3lfAQ6Nqo3f","event":"on_chat_model_stream","data":{"chunk":{"content":"을"}},"msg":"을","is_stream":true,"msgtype":"stream"}
 
-{"event":"on_chain_end","data":{},"run_id":"e179a815-3b7b-43a0-b036-3dc4f8d4c535","parent_ids":["674b2731-fda9-4660-b81e-39d2b2c76e16","69430624-53d0-4269-b8f4-e919c36686fe"],"tags":["seq:step:2","langsmith:hidden"]}
+{"status":"stream","connection_id":"fO4rVc0XIE0CIyQ=","stream_uid":"BfS806fFPYoi00yn9cJx04X0b","room_uid":"11VPKp3F0yPX","sent_uid":"51u8CEw88cixo28hW3lfAQ6Nqo3f","event":"on_chat_model_stream","data":{"chunk":{"content":" 그림"}},"msg":" 그림","is_stream":true,"msgtype":"stream"}
 
-{"event":"on_chain_start","data":{},"run_id":"c17c3fac-10e9-4067-af8a-5ce9a89a89d5","parent_ids":["674b2731-fda9-4660-b81e-39d2b2c76e16","69430624-53d0-4269-b8f4-e919c36686fe"],"tags":["seq:step:3"]}
+{"status":"stream","connection_id":"fO4rVc0XIE0CIyQ=","stream_uid":"BfS806fFPYoi00yn9cJx04X0b","room_uid":"11VPKp3F0yPX","sent_uid":"51u8CEw88cixo28hW3lfAQ6Nqo3f","event":"on_chat_model_stream","data":{"chunk":{"content":"으로"}},"msg":"으로","is_stream":true,"msgtype":"stream"}
 
-{"event":"on_chain_end","data":{},"run_id":"c17c3fac-10e9-4067-af8a-5ce9a89a89d5","parent_ids":["674b2731-fda9-4660-b81e-39d2b2c76e16","69430624-53d0-4269-b8f4-e919c36686fe"],"tags":["seq:step:3"]}
+{"status":"stream","connection_id":"fO4rVc0XIE0CIyQ=","stream_uid":"BfS806fFPYoi00yn9cJx04X0b","room_uid":"11VPKp3F0yPX","sent_uid":"51u8CEw88cixo28hW3lfAQ6Nqo3f","event":"on_chat_model_stream","data":{"chunk":{"content":" 담"}},"msg":" 담","is_stream":true,"msgtype":"stream"}
 
-{"event":"on_chain_stream","data":{"chunk":{"messages":[{"role":"assistant","content":"안녕~ 또 만나서 반가워! 계속 인사하네. 뭔가 더 이야기해볼래?","tool_calls":null}]}},"run_id":"69430624-53d0-4269-b8f4-e919c36686fe","parent_ids":["674b2731-fda9-4660-b81e-39d2b2c76e16"],"tags":["graph:step:19"]}
+{"status":"stream","connection_id":"fO4rVc0XIE0CIyQ=","stream_uid":"BfS806fFPYoi00yn9cJx04X0b","room_uid":"11VPKp3F0yPX","sent_uid":"51u8CEw88cixo28hW3lfAQ6Nqo3f","event":"on_chat_model_stream","data":{"chunk":{"content":"아"}},"msg":"아","is_stream":true,"msgtype":"stream"}
 
-{"event":"on_chain_end","data":{},"run_id":"69430624-53d0-4269-b8f4-e919c36686fe","parent_ids":["674b2731-fda9-4660-b81e-39d2b2c76e16"],"tags":["graph:step:19"]}
+{"status":"stream","connection_id":"fO4rVc0XIE0CIyQ=","stream_uid":"BfS806fFPYoi00yn9cJx04X0b","room_uid":"11VPKp3F0yPX","sent_uid":"51u8CEw88cixo28hW3lfAQ6Nqo3f","event":"on_chat_model_stream","data":{"chunk":{"content":"드"}},"msg":"드","is_stream":true,"msgtype":"stream"}
 
-{"event":"on_chain_stream","data":{"chunk":{"model":{"messages":[{"role":"assistant","content":"안녕~ 또 만나서 반가워! 계속 인사하네. 뭔가 더 이야기해볼래?","tool_calls":null}]}}},"run_id":"674b2731-fda9-4660-b81e-39d2b2c76e16","parent_ids":[],"tags":[]}
+{"status":"stream","connection_id":"fO4rVc0XIE0CIyQ=","stream_uid":"BfS806fFPYoi00yn9cJx04X0b","room_uid":"11VPKp3F0yPX","sent_uid":"51u8CEw88cixo28hW3lfAQ6Nqo3f","event":"on_chat_model_stream","data":{"chunk":{"content":"리"}},"msg":"리","is_stream":true,"msgtype":"stream"}
 
-{"event":"on_chain_end","data":{},"run_id":"674b2731-fda9-4660-b81e-39d2b2c76e16","parent_ids":[],"tags":[]}
+{"status":"stream","connection_id":"fO4rVc0XIE0CIyQ=","stream_uid":"BfS806fFPYoi00yn9cJx04X0b","room_uid":"11VPKp3F0yPX","sent_uid":"51u8CEw88cixo28hW3lfAQ6Nqo3f","event":"on_chat_model_stream","data":{"chunk":{"content":"려고"}},"msg":"려고","is_stream":true,"msgtype":"stream"}
 
-{"status":"think","connection_id":"dHB2vcYVIE0CI3Q=","msg":"생각이 끝났습니다.","msgtype":"info"}
+{"status":"stream","connection_id":"fO4rVc0XIE0CIyQ=","stream_uid":"BfS806fFPYoi00yn9cJx04X0b","room_uid":"11VPKp3F0yPX","sent_uid":"51u8CEw88cixo28hW3lfAQ6Nqo3f","event":"on_chat_model_stream","data":{"chunk":{"content":" 합니다"}},"msg":" 합니다","is_stream":true,"msgtype":"stream"}
 
-{"status":"END","connection_id":"dHB2vcYVIE0CI3Q=","msg":"<EOM>","cAt":"1724664268.459471","return_voice":0,"msgtype":"info"}
+{"status":"voice_ready","connection_id":"fO4rVc0XIE0CIyQ=","stream_uid":"BfS806fFPYoi00yn9cJx04X0b","room_uid":"11VPKp3F0yPX","msg":" 기억을 그림으로 담아드리려고 합니다","voice_url":"https://voice.chldo.com/room_uid_voice/11VPKp3F0yPX/51u8CEw88cixo28hW3lfAQ6Nqo3f.mp3?Expires=1728229457&Signature=Ajw7PR-b6nnnMIWraBa7-e3ndxUpCutoho-hpmEcADcfvGGugCUJoPlzB7X~dYdLsaA0tDv6yMy-24cvmqYAFK1NLg9n5XPtorBi9ShQ21w9zX2qJTG0UVkFW1JZyU3BOYtrqGohIOHJjeQPyomyZzCnDGlmFdNxHpYUrA17y9O9Ciig1ddXahy8SFuTEQZTfAeh68X7989-QFlIIcygZ-CamTsvl8YwJDpasY5uQl0s9-dFxyHHB7c9Voo-sOxx6gktfv3PJ26NgsCRAkTv27onpvmZlvaXA0H48fCJoo5tHYTfKxZp2dL6oeAA0BTu5DGCzPIuM41Fnf8pmqoxuQ__&Key-Pair-Id=KX12RGNKWPA4Y","voice_length":2.472,"sent_uid":"51u8CEw88cixo28hW3lfAQ6Nqo3f","is_stream":true,"msgtype":"info"}
+
+{"status":"think","connection_id":"fO4rVc0XIE0CIyQ=","stream_uid":"BfS806fFPYoi00yn9cJx04X0b","room_uid":"11VPKp3F0yPX","msg":"생각이 끝났습니다.","is_stream":true,"msgtype":"info"}
+
+{"status":"END","connection_id":"fO4rVc0XIE0CIyQ=","stream_uid":"BfS806fFPYoi00yn9cJx04X0b","room_uid":"11VPKp3F0yPX","msg":"","cAt":"1728225853.259402","is_stream":true,"return_voice":1,"msgtype":"info"}
 ```
 
 사용자가 구성한 Graph에 따라 각 작동 상태가 반환되며, 일반적으로 다음과 같이 작동합니다.
