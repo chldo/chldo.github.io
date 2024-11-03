@@ -1,5 +1,7 @@
 # chldo docs
 
+yarn run start
+
 ## Deploy
 
 ```

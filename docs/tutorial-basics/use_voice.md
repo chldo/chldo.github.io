@@ -27,7 +27,7 @@ Chldo.com에서 적용한 음성을 출력할 수 있습니다.
 ```
 
 ```json {55,85,127,149}
-{"status":"START","connection_id":"dIMU7eKzoE0Ab7w=","msg":"","cAt":"1724696442.523638","return_voice":1,"msgtype":"info"}
+{"status":"START","connection_id":"dIMU7eKzoE0Ab7w=","msg":"<SOM>","cAt":"1724696442.523638","return_voice":1,"msgtype":"info"}
 
 {"status":"received","connection_id":"dIMU7eKzoE0Ab7w=","msg":"메시지를 전달 받았습니다.","msgtype":"info"}
 
@@ -195,5 +195,107 @@ Chldo.com에서 적용한 음성을 출력할 수 있습니다.
 
 {"status":"think","connection_id":"dIMU7eKzoE0Ab7w=","msg":"생각이 끝났습니다.","msgtype":"info"}
 
-{"status":"END","connection_id":"dIMU7eKzoE0Ab7w=","msg":"","cAt":"1724696442.523638","return_voice":1,"msgtype":"info"}
+{"status":"END","connection_id":"dIMU7eKzoE0Ab7w=","msg":"<EOM>","cAt":"1724696442.523638","return_voice":1,"msgtype":"info"}
+```
+
+## 언어 선택
+
+언어 선택 기능을 통해 원하는 언어로 음성을 출력할 수 있습니다.
+
+### `language`의 적용
+
+-   입력을 하지 않는 경우, 현재 한국어가 기본 적용됩니다.
+-   `language`
+    -   `ko` : 한국어
+    -   `en` : 영어
+    -   `ja` : 일본어
+    -   `zh` : 중국어
+    -   `es` : 스페인어
+    -   `fr` : 프랑스어
+    -   `de` : 독일어
+    -   `it` : 이탈리아어
+    -   `pt` : 포르투갈어
+    -   `ru` : 러시아어
+    -   `ar` : 아랍어
+    -   `hi` : 힌디어
+    -   `bn` : 벵골어
+    -   `pa` : 페르시아어
+    -   `tr` : 터키어
+    -   `nl` : 네덜란드어
+    -   `sv` : 스웨덴어
+    -   `no` : 노르웨이어
+    -   `da` : 덴마크어
+    -   `fi` : 핀란드어
+    -   `pl` : 폴란드어
+    -   `cs` : 체코어
+    -   `sk` : 슬로바키아어
+    -   `sl` : 슬로베니아어
+    -   `hr` : 크로아티아어
+    -   `bg` : 불가리아어
+    -   `el` : 그리스어
+    -   `ro` : 루마니아어
+    -   `hu` : 헝가리어
+    -   `lt` : 리투아니아어
+    -   `lv` : 라틴어
+    -   `tl` : 타갈로그어
+    -   `vi` : 베트남어
+    -   `th` : 태국어
+    -   `id` : 인도네시아어
+    -   `ms` : 말레이어
+    -   `ca` : 카탈로니아어
+
+### 예시
+
+```json {14}
+{
+    "action": "sendmsg",
+    "model": "gpt-4o-mini",
+    "room_uid": "2NfuLQet8KLL",
+    "user_id": "user_123",
+    "questioner": "김철수",
+    "visitor_name": "김철수",
+    "msg": "안녕하세요",
+    "api_key": "API 키",
+    "return_voice": 1,
+    "stream": 1,
+    "no_save": 1,
+    "no_history": 1,
+    "language": "id"
+}
+```
+
+```json
+{"status":"START","connection_id":"ArIz-dpIoE0CEeg=","room_uid":"2NfuLQet8KLL","stream_uid":"vMfnuFa1RxtiNtl5SuxrKDqSa","scene_number":1,"msg":"<SOM>","is_stream":true,"cAt":"1730644007.314614","return_voice":1,"msgtype":"info"}
+
+{"status":"history","connection_id":"ArIz-dpIoE0CEeg=","stream_uid":"vMfnuFa1RxtiNtl5SuxrKDqSa","scene_number":1,"room_uid":"2NfuLQet8KLL","msg":"대화 기억을 찾고 있습니다.","is_stream":true,"msgtype":"info"}
+
+{"status":"history","connection_id":"ArIz-dpIoE0CEeg=","stream_uid":"vMfnuFa1RxtiNtl5SuxrKDqSa","scene_number":1,"room_uid":"2NfuLQet8KLL","msg":"대화 기억을 재생하였습니다.","is_stream":true,"msgtype":"info"}
+
+{"status":"memory","connection_id":"ArIz-dpIoE0CEeg=","stream_uid":"vMfnuFa1RxtiNtl5SuxrKDqSa","scene_number":1,"room_uid":"2NfuLQet8KLL","msg":"저장된 메모리를 찾고 있습니다.","is_stream":true,"msgtype":"info"}
+
+{"status":"memory","connection_id":"ArIz-dpIoE0CEeg=","stream_uid":"vMfnuFa1RxtiNtl5SuxrKDqSa","scene_number":1,"room_uid":"2NfuLQet8KLL","msg":"저장된 메모리를 찾았습니다. 핫워드 수신으로 설정된 메모리는 총 0개 입니다.","is_stream":true,"msgtype":"info"}
+
+{"status":"think","connection_id":"ArIz-dpIoE0CEeg=","stream_uid":"vMfnuFa1RxtiNtl5SuxrKDqSa","scene_number":1,"room_uid":"2NfuLQet8KLL","msg":"생각을 시작합니다.","is_stream":true,"msgtype":"info"}
+
+{"status":"stream","connection_id":"ArIz-dpIoE0CEeg=","stream_uid":"vMfnuFa1RxtiNtl5SuxrKDqSa","scene_number":1,"room_uid":"2NfuLQet8KLL","sent_uid":"PlzfrQZfQp6QLQoJtvgvNd1WwcVi","event":"on_chat_model_stream","data":{"chunk":{"content":"Halo"}},"msg":"Halo","is_stream":true,"msgtype":"stream"}
+
+{"status":"stream","connection_id":"ArIz-dpIoE0CEeg=","stream_uid":"vMfnuFa1RxtiNtl5SuxrKDqSa","scene_number":1,"room_uid":"2NfuLQet8KLL","sent_uid":"PlzfrQZfQp6QLQoJtvgvNd1WwcVi","event":"on_chat_model_stream","data":{"chunk":{"content":"!"}},"msg":"!","is_stream":true,"msgtype":"stream"}
+
+{"status":"stream","connection_id":"ArIz-dpIoE0CEeg=","stream_uid":"vMfnuFa1RxtiNtl5SuxrKDqSa","scene_number":1,"room_uid":"2NfuLQet8KLL","sent_uid":"PlzfrQZfQp6QLQoJtvgvNd1WwcVi","event":"on_chat_model_stream","data":{"chunk":{"content":" Ada"}},"msg":" Ada","is_stream":true,"msgtype":"stream"}
+
+{"status":"stream","connection_id":"ArIz-dpIoE0CEeg=","stream_uid":"vMfnuFa1RxtiNtl5SuxrKDqSa","scene_number":1,"room_uid":"2NfuLQet8KLL","sent_uid":"PlzfrQZfQp6QLQoJtvgvNd1WwcVi","event":"on_chat_model_stream","data":{"chunk":{"content":" yang"}},"msg":" yang","is_stream":true,"msgtype":"stream"}
+
+{"status":"stream","connection_id":"ArIz-dpIoE0CEeg=","stream_uid":"vMfnuFa1RxtiNtl5SuxrKDqSa","scene_number":1,"room_uid":"2NfuLQet8KLL","sent_uid":"PlzfrQZfQp6QLQoJtvgvNd1WwcVi","event":"on_chat_model_stream","data":{"chunk":{"content":" bisa"}},"msg":" bisa","is_stream":true,"msgtype":"stream"}
+
+{"status":"stream","connection_id":"ArIz-dpIoE0CEeg=","stream_uid":"vMfnuFa1RxtiNtl5SuxrKDqSa","scene_number":1,"room_uid":"2NfuLQet8KLL","sent_uid":"PlzfrQZfQp6QLQoJtvgvNd1WwcVi","event":"on_chat_model_stream","data":{"chunk":{"content":" saya"}},"msg":" saya","is_stream":true,"msgtype":"stream"}
+
+{"status":"stream","connection_id":"ArIz-dpIoE0CEeg=","stream_uid":"vMfnuFa1RxtiNtl5SuxrKDqSa","scene_number":1,"room_uid":"2NfuLQet8KLL","sent_uid":"PlzfrQZfQp6QLQoJtvgvNd1WwcVi","event":"on_chat_model_stream","data":{"chunk":{"content":" bantu"}},"msg":" bantu","is_stream":true,"msgtype":"stream"}
+
+{"status":"stream","connection_id":"ArIz-dpIoE0CEeg=","stream_uid":"vMfnuFa1RxtiNtl5SuxrKDqSa","scene_number":1,"room_uid":"2NfuLQet8KLL","sent_uid":"PlzfrQZfQp6QLQoJtvgvNd1WwcVi","event":"on_chat_model_stream","data":{"chunk":{"content":"?"}},"msg":"?","is_stream":true,"msgtype":"stream"}
+
+{"status":"voice_ready","connection_id":"ArIz-dpIoE0CEeg=","stream_uid":"vMfnuFa1RxtiNtl5SuxrKDqSa","scene_number":1,"room_uid":"2NfuLQet8KLL","sent_uid":"PlzfrQZfQp6QLQoJtvgvNd1WwcVi","msg":"Halo! Ada yang bisa saya bantu?","voice_url":"https://voice.chldo.com/room_uid_voice/2NfuLQet8KLL/PlzfrQZfQp6QLQoJtvgvNd1WwcVi.mp3?Expires=1731248811&Signature=C-ony9PxKgN-~CEya2Do7kptzF3kp5c4YkHVdegzuiay-44bdDyxIBRQTR-oeM~N8~cBw3ZFn2dDfwhpJZnHCh3VnnyuGk9km0~UIPcGghV0GSqcX6ChW1iUZm4xJDteQtMjxdcJG6qywEWb0oMcvyMtpA-Bx5DYV2t-lSuMOIUKLoVMqCFa5u9gMcrmH-M1N5dkPxJa2LhRu~SRL5hHOpTJ7w4pk6tI3HkT8c5Fx7a4n8RksVqSJ0bdkTDxWf7yaDcGx6qHeGCy8XQ2FvAii-VU75quEqVtZb-JA7DU8CroM541lrEMIEI45d4Feub-JNmiogFLA4KIu8XFN5WoxA__&Key-Pair-Id=KX12RGNKWPA4Y","voice_length":1.848,"is_stream":true,"msgtype":"info"}
+
+{"status":"think","connection_id":"ArIz-dpIoE0CEeg=","stream_uid":"vMfnuFa1RxtiNtl5SuxrKDqSa","scene_number":1,"room_uid":"2NfuLQet8KLL","msg":"생각이 끝났습니다.","is_stream":true,"msgtype":"info"}
+
+{"status":"END","connection_id":"ArIz-dpIoE0CEeg=","stream_uid":"vMfnuFa1RxtiNtl5SuxrKDqSa","scene_number":1,"room_uid":"2NfuLQet8KLL","msg":"<EOM>","cAt":"1730644007.314614","is_stream":true,"return_voice":1,"msgtype":"info"}
 ```
